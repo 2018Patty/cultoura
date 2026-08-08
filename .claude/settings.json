@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node font-check.mjs)",
+      "Bash(node check-diagram.mjs)"
+    ],
+    "additionalDirectories": [
+      "/Users/pattapornwarintarawej/.npm/_npx/705bc6b22212b352"
+    ]
+  }
+}
