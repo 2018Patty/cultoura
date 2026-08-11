@@ -1025,7 +1025,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     travelerName: 'คุณภัทรวรินทร์ สมบูรณ์',
     travelerEmail: 'patwarin@gmail.com',
     paymentMethod: 'PromptPay QR',
-    qrCodeUrl: 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CULTOURA-BK-2026-8801',
+    qrCodeUrl: 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=LOCALCONNECT-BK-2026-8801',
     createdDate: '2026-08-04'
   }
 ];

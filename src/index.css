@@ -3,26 +3,21 @@
 @theme {
   --font-sans: 'Google Sans', 'Google Sans Flex', 'Google Sans Text', 'Prompt', 'Sarabun', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  --color-clay: #5A3A28;
-  --color-clay-dark: #3E2619;
-  --color-clay-light: #7A533D;
-  --color-burnt: #C25E2E;
-  --color-burnt-hover: #A84E23;
-  --color-terracotta: #D47A55;
-  --color-moss: #5E7045;
-  --color-moss-dark: #465532;
-  --color-olive: #8A9A5B;
-  --color-sage: #B7C5A1;
-  --color-sage-light: #E5ECD9;
-  --color-beige: #E7DBB8;
-  --color-sand: #F2E6C9;
-  --color-cream: #FAF4E9;
-  --color-cream-card: #FFFDF8;
+  --color-forest: #1F4B38;
+  --color-forest-dark: #14301F;
+  --color-moss: #355E3B;
+  --color-moss-hover: #1F4B38;
+  --color-olive: #6C8355;
+  --color-sage: #93B39A;
+  --color-eucalyptus: #B8D1C1;
+  --color-mint: #E6F2EA;
+  --color-soft-cream: #F6F8F4;
+  --color-cream-card: #FFFFFF;
 }
 
 body {
-  background-color: #FAF4E9;
-  color: #5A3A28;
+  background-color: #F6F8F4;
+  color: #1F4B38;
   font-family: 'Google Sans', 'Google Sans Flex', 'Google Sans Text', 'Prompt', 'Sarabun', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -32,13 +27,13 @@ body {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F2E6C9;
+  background: #F6F8F4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #B7C5A1;
+  background: #B8D1C1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8A9A5B;
+  background: #6C8355;
 }
 

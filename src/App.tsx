@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF4E9] text-[#5A3A28] font-sans antialiased selection:bg-[#C25E2E] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#F6F8F4] text-[#1F4B38] font-sans antialiased selection:bg-[#355E3B] selection:text-white">
       
       {/* Persistent Top Navigation Bar */}
       <Navbar 

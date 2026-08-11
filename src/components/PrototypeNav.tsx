@@ -44,13 +44,13 @@ export const PrototypeNav: React.FC<PrototypeNavProps> = ({ currentPage, onNavig
       
       {/* Expanded Quick Switcher Sheet */}
       {isOpen && (
-        <div className="bg-[#5A3A28] text-[#FAF4E9] rounded-3xl p-5 mb-3 border-2 border-[#C25E2E] shadow-2xl backdrop-blur-lg animate-in slide-in-from-bottom duration-200">
-          <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#7A533D]">
+        <div className="bg-[#1F4B38] text-[#F6F8F4] rounded-3xl p-5 mb-3 border-2 border-[#355E3B] shadow-2xl backdrop-blur-lg animate-in slide-in-from-bottom duration-200">
+          <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#355E3B]">
             <div className="flex items-center gap-2">
-              <Layers className="w-5 h-5 text-[#C25E2E]" />
-              <span className="font-bold text-sm text-white">Cultoura Prototype Screen Switcher (10 Screens)</span>
+              <Layers className="w-5 h-5 text-[#355E3B]" />
+              <span className="font-bold text-sm text-white">LocalConnect Prototype Screen Switcher (10 Screens)</span>
             </div>
-            <span className="text-xs text-[#E7DBB8] bg-[#7A533D] px-2.5 py-1 rounded-full">
+            <span className="text-xs text-[#E6F2EA] bg-[#355E3B] px-2.5 py-1 rounded-full">
               คลิกเพื่อสลับหน้าใช้งาน
             </span>
           </div>
@@ -67,14 +67,14 @@ export const PrototypeNav: React.FC<PrototypeNavProps> = ({ currentPage, onNavig
                   }}
                   className={`p-2.5 rounded-xl text-left transition-all flex flex-col justify-between border cursor-pointer ${
                     isActive
-                      ? 'bg-[#C25E2E] text-white border-white shadow-md font-bold'
-                      : 'bg-[#3E2619] hover:bg-[#7A533D] text-[#E7DBB8] border-[#7A533D]'
+                      ? 'bg-[#355E3B] text-white border-white shadow-md font-bold'
+                      : 'bg-[#14301F] hover:bg-[#355E3B] text-[#E6F2EA] border-[#355E3B]'
                   }`}
                 >
                   <div className="flex items-center justify-between w-full mb-1">
                     <span className="shrink-0">{p.icon}</span>
                     {p.badge && (
-                      <span className="bg-[#FAF4E9] text-[#5A3A28] text-[9px] font-black px-1.5 py-0.2 rounded-md">
+                      <span className="bg-[#F6F8F4] text-[#1F4B38] text-[9px] font-black px-1.5 py-0.2 rounded-md">
                         {p.badge}
                       </span>
                     )}
@@ -91,13 +91,13 @@ export const PrototypeNav: React.FC<PrototypeNavProps> = ({ currentPage, onNavig
       )}
 
       {/* Floating Toolbar Pill */}
-      <div className="bg-[#3E2619]/90 text-[#FAF4E9] p-2 pl-4 pr-3 rounded-full border border-[#C25E2E]/60 shadow-2xl backdrop-blur-md flex items-center justify-between gap-3">
+      <div className="bg-[#14301F]/90 text-[#F6F8F4] p-2 pl-4 pr-3 rounded-full border border-[#355E3B]/60 shadow-2xl backdrop-blur-md flex items-center justify-between gap-3">
         
         {/* Active Screen Indicator */}
         <div className="flex items-center gap-2.5 overflow-hidden">
-          <span className="w-3 h-3 rounded-full bg-[#C25E2E] animate-ping shrink-0" />
+          <span className="w-3 h-3 rounded-full bg-[#355E3B] animate-ping shrink-0" />
           <div className="truncate">
-            <span className="text-[10px] font-semibold text-[#B7C5A1] uppercase tracking-wider block leading-none">
+            <span className="text-[10px] font-semibold text-[#B8D1C1] uppercase tracking-wider block leading-none">
               กำลังดูหน้า:
             </span>
             <span className="text-xs font-bold text-white truncate flex items-center gap-1.5 mt-0.5">
@@ -112,7 +112,7 @@ export const PrototypeNav: React.FC<PrototypeNavProps> = ({ currentPage, onNavig
           
           <button
             onClick={() => onNavigate('transparency')}
-            className="hidden sm:flex items-center gap-1 bg-[#C25E2E] hover:bg-[#A84E23] text-white text-xs px-3 py-1.5 rounded-full font-bold transition-all shadow-xs cursor-pointer"
+            className="hidden sm:flex items-center gap-1 bg-[#355E3B] hover:bg-[#1F4B38] text-white text-xs px-3 py-1.5 rounded-full font-bold transition-all shadow-xs cursor-pointer"
           >
             <PieChart className="w-3.5 h-3.5" />
             <span>หน้าความโปร่งใส</span>
@@ -120,9 +120,9 @@ export const PrototypeNav: React.FC<PrototypeNavProps> = ({ currentPage, onNavig
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="bg-[#5A3A28] hover:bg-[#7A533D] text-white px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 border border-[#7A533D] transition-all cursor-pointer"
+            className="bg-[#1F4B38] hover:bg-[#355E3B] text-white px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 border border-[#355E3B] transition-all cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#E7DBB8]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#E6F2EA]" />
             <span>สลับหน้า ({PAGES_CONFIG.findIndex(p=>p.id===currentPage)+1}/10)</span>
             <ChevronUp className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
           </button>
