@@ -24,6 +24,8 @@ export interface CommunityDistributionLevel2 {
   localMealsPct: number; // e.g. 20
   localTransportPct: number; // e.g. 10
   communityFundPct: number; // e.g. 10
+  handicraftPct?: number; // e.g. 9 (local handicraft / souvenir items)
+  insurancePct?: number; // e.g. 5 (traveler insurance funded from the community share)
 }
 
 export interface ImpactMetrics {
@@ -114,4 +116,5 @@ export interface B2BPackage {
   descriptionTh: string;
   featuredCommunityTh: string;
   image: string;
+  experienceId?: string;
 }

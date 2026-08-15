@@ -18,7 +18,8 @@ import {
   HeartHandshake,
   CheckCircle2,
   Calculator,
-  Coins
+  Coins,
+  Gift
 } from 'lucide-react';
 
 export const TransparencyPage: React.FC = () => {
@@ -37,7 +38,6 @@ export const TransparencyPage: React.FC = () => {
   const communityThb = Math.round((totalPrice * selectedExp.breakdownLevel1.communitySharePct) / 100);
   const gatewayThb = Math.round((totalPrice * selectedExp.breakdownLevel1.paymentGatewayPct) / 100);
   const managerThb = Math.round((totalPrice * selectedExp.breakdownLevel1.communityManagerPct) / 100);
-  const insuranceThb = Math.round((totalPrice * selectedExp.breakdownLevel1.insuranceSupportPct) / 100);
   const platformThb = Math.round((totalPrice * selectedExp.breakdownLevel1.platformDevOpsPct) / 100);
 
   // Level 2 Community Distribution Amounts (within communityThb)
@@ -46,6 +46,8 @@ export const TransparencyPage: React.FC = () => {
   const mealsThb = Math.round((communityThb * selectedExp.distributionLevel2.localMealsPct) / 100);
   const transportThb = Math.round((communityThb * selectedExp.distributionLevel2.localTransportPct) / 100);
   const fundThb = Math.round((communityThb * selectedExp.distributionLevel2.communityFundPct) / 100);
+  const handicraftThb = Math.round((communityThb * (selectedExp.distributionLevel2.handicraftPct ?? 0)) / 100);
+  const travelInsuranceThb = Math.round((communityThb * (selectedExp.distributionLevel2.insurancePct ?? 0)) / 100);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12 text-left">
@@ -229,16 +231,6 @@ export const TransparencyPage: React.FC = () => {
                     strokeDashoffset={`-${(77 + 14 + 4) * 2.38}`}
                     className="hover:opacity-90 transition-opacity cursor-pointer"
                   />
-                  {/* Insurance: 2% */}
-                  <circle
-                    cx="50" cy="50" r="38"
-                    fill="transparent"
-                    stroke="#1F4B38"
-                    strokeWidth="16"
-                    strokeDasharray={`${2 * 2.38} ${100 * 2.38}`}
-                    strokeDashoffset={`-${(77 + 14 + 4 + 3) * 2.38}`}
-                    className="hover:opacity-90 transition-opacity cursor-pointer"
-                  />
                 </svg>
 
                 {/* Donut Center Label */}
@@ -309,19 +301,6 @@ export const TransparencyPage: React.FC = () => {
                 <span className="text-sm font-bold text-[#1F4B38]">{gatewayThb.toLocaleString()} THB</span>
               </div>
 
-              <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#E6F2EA] flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-[#1F4B38] text-white font-black text-sm flex items-center justify-center">
-                    2%
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-[#1F4B38] text-sm">ประกันภัย & ระบบสนับสนุน (Insurance / Support)</h3>
-                    <p className="text-xs text-[#1F4B38]/70">ประกันอุบัติเหตุการเดินทางสำหรับนักท่องเที่ยวทุกท่าน</p>
-                  </div>
-                </div>
-                <span className="text-sm font-bold text-[#1F4B38]">{insuranceThb.toLocaleString()} THB</span>
-              </div>
-
             </div>
 
           </div>
@@ -333,7 +312,7 @@ export const TransparencyPage: React.FC = () => {
             
             <div className="bg-[#6C8355] text-white p-6 rounded-3xl space-y-2">
               <span className="bg-[#F6F8F4] text-[#6C8355] font-black text-[10px] px-3 py-1 rounded-full uppercase">
-                การกระจายรายได้ภายในชุมชน (Within the 77% Community Share)
+                การกระจายรายได้ภายในชุมชน (Within the {selectedExp.breakdownLevel1.communitySharePct}% Community Share)
               </span>
               <h3 className="text-xl font-bold">
                 วิสาหกิจชุมชนกระจายเงิน {communityThb.toLocaleString()} THB ไปสู่ใครบ้าง?
@@ -356,41 +335,44 @@ export const TransparencyPage: React.FC = () => {
                 <div className="w-0.5 h-8 bg-[#B8D1C1] mt-2" />
               </div>
 
-              {/* Horizontal trunk line spanning the stakeholder row (desktop only) */}
-              <div className="relative hidden sm:block">
-                <div className="absolute top-0 left-[10%] right-[10%] h-0.5 bg-[#B8D1C1]" />
-              </div>
-
-              {/* Stakeholder Icons connected to the hub */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-x-4 gap-y-8 pt-8">
-                {[
-                  { icon: Compass, pct: 50, amount: guideThb, color: '#6C8355', label: 'มัคคุเทศก์ / ผู้นำทางชุมชน', who: 'กลุ่มไกด์และผู้นำทางท้องถิ่น' },
-                  { icon: Utensils, pct: 20, amount: mealsThb, color: '#355E3B', label: 'อาหารพื้นบ้านวัตถุดิบท้องถิ่น', who: 'กลุ่มแม่บ้านปรุงอาหารและเกษตรกร' },
-                  { icon: HomeIcon, pct: 10, amount: homestayThb, color: '#93B39A', label: 'โฮมสเตย์ / ที่พักเรือนไม้', who: 'เจ้าของบ้านพักในชุมชน' },
-                  { icon: Truck, pct: 10, amount: transportThb, color: '#93B39A', label: 'รถท้องถิ่น / เรือชุมชน', who: 'กลุ่มคนขับรถและเรือรับส่ง' },
-                  { icon: TreePine, pct: 10, amount: fundThb, color: '#6C8355', label: 'กองทุนกลางพัฒนาชุมชน', who: 'คณะกรรมการกองทุนหมู่บ้าน' },
-                ].map((s, i) => {
-                  const Icon = s.icon;
-                  return (
-                    <div key={i} className="relative flex flex-col items-center text-center gap-1">
-                      {/* Spoke connecting this icon up to the trunk line */}
-                      <div
-                        className="hidden sm:block absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8"
-                        style={{ backgroundColor: '#B8D1C1' }}
-                      />
-                      <div
-                        className="w-14 h-14 rounded-2xl flex items-center justify-center border-2 shadow-xs"
-                        style={{ backgroundColor: `${s.color}26`, borderColor: `${s.color}66`, color: s.color }}
-                      >
-                        <Icon className="w-7 h-7" />
+              {/* Stakeholder Icons connected to the hub — self-sizing so the trunk line always
+                  matches the actual (post-filter) row width and stays centered */}
+              <div className="flex justify-center">
+                <div className="relative inline-flex flex-wrap justify-center gap-x-6 gap-y-10 pt-8">
+                  {/* Trunk line spans exactly from the first icon's spoke to the last icon's spoke
+                      (each item is w-32, so its spoke sits 64px/w-16 in from the item's outer edge) */}
+                  <div className="hidden sm:block absolute top-0 left-16 right-16 h-0.5 bg-[#B8D1C1]" />
+                  {[
+                    { icon: Compass, pct: selectedExp.distributionLevel2.guideLeaderPct, amount: guideThb, color: '#6C8355', label: 'มัคคุเทศก์ / ผู้นำทางชุมชน', who: 'กลุ่มไกด์และผู้นำทางท้องถิ่น' },
+                    { icon: Utensils, pct: selectedExp.distributionLevel2.localMealsPct, amount: mealsThb, color: '#355E3B', label: 'อาหารพื้นบ้านวัตถุดิบท้องถิ่น', who: 'กลุ่มแม่บ้านปรุงอาหารและเกษตรกร' },
+                    { icon: Gift, pct: selectedExp.distributionLevel2.handicraftPct ?? 0, amount: handicraftThb, color: '#93B39A', label: 'ของเล่นพื้นบ้าน / งานหัตถกรรม', who: 'กลุ่มผู้สูงอายุและช่างฝีมือท้องถิ่น' },
+                    { icon: ShieldCheck, pct: selectedExp.distributionLevel2.insurancePct ?? 0, amount: travelInsuranceThb, color: '#355E3B', label: 'ประกันเดินทาง', who: 'ความคุ้มครองนักท่องเที่ยวตลอดทริป' },
+                    { icon: HomeIcon, pct: selectedExp.distributionLevel2.homestayPct, amount: homestayThb, color: '#93B39A', label: 'โฮมสเตย์ / ที่พักเรือนไม้', who: 'เจ้าของบ้านพักในชุมชน' },
+                    { icon: Truck, pct: selectedExp.distributionLevel2.localTransportPct, amount: transportThb, color: '#93B39A', label: 'รถท้องถิ่น / เรือชุมชน', who: 'กลุ่มคนขับรถและเรือรับส่ง' },
+                    { icon: TreePine, pct: selectedExp.distributionLevel2.communityFundPct, amount: fundThb, color: '#6C8355', label: 'กองทุนกลางพัฒนาชุมชน', who: 'คณะกรรมการกองทุนหมู่บ้าน' },
+                  ].filter((s) => s.pct > 0).map((s, i) => {
+                    const Icon = s.icon;
+                    return (
+                      <div key={i} className="relative flex flex-col items-center text-center gap-1 w-32">
+                        {/* Spoke connecting this icon up to the trunk line */}
+                        <div
+                          className="hidden sm:block absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8"
+                          style={{ backgroundColor: '#B8D1C1' }}
+                        />
+                        <div
+                          className="w-14 h-14 rounded-2xl flex items-center justify-center border-2 shadow-xs"
+                          style={{ backgroundColor: `${s.color}26`, borderColor: `${s.color}66`, color: s.color }}
+                        >
+                          <Icon className="w-7 h-7" />
+                        </div>
+                        <span className="text-lg font-black" style={{ color: s.color }}>{s.pct}%</span>
+                        <h4 className="text-xs font-bold text-[#1F4B38]">{s.label}</h4>
+                        <p className="text-xs font-extrabold text-[#355E3B]">{s.amount.toLocaleString()} THB</p>
+                        <p className="text-[10px] text-[#1F4B38]/70">{s.who}</p>
                       </div>
-                      <span className="text-lg font-black" style={{ color: s.color }}>{s.pct}%</span>
-                      <h4 className="text-xs font-bold text-[#1F4B38]">{s.label}</h4>
-                      <p className="text-xs font-extrabold text-[#355E3B]">{s.amount.toLocaleString()} THB</p>
-                      <p className="text-[10px] text-[#1F4B38]/70">{s.who}</p>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
 
             </div>
@@ -460,7 +442,7 @@ export const TransparencyPage: React.FC = () => {
           <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#E6F2EA] space-y-2">
             <h3 className="font-bold text-sm text-[#6C8355]">2. สร้างกองทุนสวัสดิการชุมชนที่ยั่งยืน</h3>
             <p>
-              ทุกทริปมีการหัก 10% เข้ากองทุนกลางของหมู่บ้านอย่างเป็นระบบ ทำให้เด็กๆ ในหมู่บ้านได้รับทุนการศึกษา และมีงบซ่อมแซมระบบสาธารณูปโภคโดยไม่ต้องรอความช่วยเหลือจากภายนอก
+              ทุกทริปมีการหักเข้ากองทุนกลางของหมู่บ้านอย่างเป็นระบบ เพื่อใช้จ่ายตามวัตถุประสงค์ของแต่ละชุมชน
             </p>
           </div>
         </div>

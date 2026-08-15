@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PageId, Experience } from '../types';
+import { EXPERIENCE_REVIEWS } from '../data/reviewsData';
 import { 
   MapPin, 
   Clock, 
@@ -10,9 +11,10 @@ import {
   ShieldCheck, 
   Calendar, 
   ChevronRight, 
-  Heart, 
+  Heart,
   Sparkles,
-  ArrowLeft
+  ArrowLeft,
+  Images
 } from 'lucide-react';
 
 interface DetailPageProps {
@@ -25,7 +27,9 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
   const [paxCount, setPaxCount] = useState<number>(2);
   const [selectedDate, setSelectedDate] = useState<string>('2026-08-25');
   const [activeTab, setActiveTab] = useState<'overview' | 'itinerary' | 'transparency' | 'reviews'>('overview');
+  const [showAllPhotos, setShowAllPhotos] = useState<boolean>(false);
 
+  const allPhotos = Array.from(new Set([experience.coverImage, ...experience.images]));
   const communityShareAmount = Math.round((experience.priceThbPerPerson * experience.breakdownLevel1.communitySharePct) / 100);
   const totalPrice = experience.priceThbPerPerson * paxCount;
   const totalCommunityShare = communityShareAmount * paxCount;
@@ -101,6 +105,37 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
           ))}
         </div>
       </div>
+
+      {/* VIEW MORE PHOTOS TOGGLE */}
+      {allPhotos.length > 3 && (
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowAllPhotos(!showAllPhotos)}
+            className="flex items-center gap-2 bg-[#F6F8F4] hover:bg-[#E6F2EA] text-[#1F4B38] font-bold text-xs px-5 py-2.5 rounded-2xl border border-[#E6F2EA] transition-colors cursor-pointer"
+          >
+            <Images className="w-4 h-4 text-[#355E3B]" />
+            {showAllPhotos ? 'ซ่อนรูปภาพ' : `ดูรูปเพิ่มเติม (ทั้งหมด ${allPhotos.length} รูป)`}
+          </button>
+        </div>
+      )}
+
+      {/* FULL PHOTO GALLERY SECTION */}
+      {showAllPhotos && (
+        <div className="space-y-4 animate-in fade-in duration-200">
+          <h2 className="text-2xl font-black text-[#1F4B38]">อัลบั้มภาพทั้งหมดของทริปนี้</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {allPhotos.map((imgUrl, i) => (
+              <div key={i} className="rounded-2xl overflow-hidden border border-[#E6F2EA] shadow-sm bg-white aspect-4/3">
+                <img
+                  src={imgUrl}
+                  alt={`${experience.titleTh} photo ${i + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* TWO COLUMN CONTENT LAYOUT */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -248,7 +283,7 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
               </div>
 
               {/* Detailed Breakdown Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 pt-2 text-center text-xs">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center text-xs">
                 <div className="bg-white/10 p-2.5 rounded-2xl border border-white/10">
                   <span className="text-[10px] text-[#E6F2EA] block">ชุมชนรับตรง</span>
                   <span className="font-extrabold text-[#B8D1C1] text-sm">{experience.breakdownLevel1.communitySharePct}%</span>
@@ -260,10 +295,6 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
                 <div className="bg-white/10 p-2.5 rounded-2xl border border-white/10">
                   <span className="text-[10px] text-[#E6F2EA] block">Community Manager</span>
                   <span className="font-extrabold text-white text-sm">{experience.breakdownLevel1.communityManagerPct}%</span>
-                </div>
-                <div className="bg-white/10 p-2.5 rounded-2xl border border-white/10">
-                  <span className="text-[10px] text-[#E6F2EA] block">ประกันภัย</span>
-                  <span className="font-extrabold text-white text-sm">{experience.breakdownLevel1.insuranceSupportPct}%</span>
                 </div>
                 <div className="bg-white/10 p-2.5 rounded-2xl border border-white/10">
                   <span className="text-[10px] text-[#E6F2EA] block">Platform Ops</span>
@@ -279,17 +310,19 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
             <div className="bg-[#FFFFFF] p-6 rounded-3xl border border-[#E6F2EA] space-y-4 animate-in fade-in duration-200">
               <h3 className="text-lg font-bold text-[#1F4B38]">รีวิวและความประทับใจจากผู้เคยร่วมทริป</h3>
               <div className="space-y-3">
-                <div className="p-4 rounded-2xl bg-[#F6F8F4] border border-[#E6F2EA]">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-bold text-xs text-[#1F4B38]">คุณนลินา พักตร์พร</span>
-                    <span className="text-amber-500 font-bold text-xs flex items-center gap-1">
-                      <Star className="w-3.5 h-3.5 fill-amber-500" /> 5.0
-                    </span>
+                {(EXPERIENCE_REVIEWS[experience.id] || []).map((review, i) => (
+                  <div key={i} className="p-4 rounded-2xl bg-[#F6F8F4] border border-[#E6F2EA]">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-bold text-xs text-[#1F4B38]">{review.nameTh}</span>
+                      <span className="text-amber-500 font-bold text-xs flex items-center gap-1">
+                        <Star className="w-3.5 h-3.5 fill-amber-500" /> {review.rating.toFixed(1)}
+                      </span>
+                    </div>
+                    <p className="text-xs text-[#1F4B38]/80">
+                      "{review.textTh}"
+                    </p>
                   </div>
-                  <p className="text-xs text-[#1F4B38]/80">
-                    "ประทับใจมากค่ะ ต้อนรับอบอุ่น อาหารกระบอกไม้ไผ่อร่อยมาก ที่สำคัญชอบตรงที่สแกนดูได้เลยว่าเงินค่าทริปเราส่งถึงคุณตาคุณยายในหมู่บ้านอย่างไร รู้สึกสบายใจและอยากมาอีก"
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           )}

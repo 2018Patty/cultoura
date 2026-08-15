@@ -2,97 +2,6 @@ import { Experience, CommunityProfile, B2BPackage, Booking } from '../types';
 
 export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
   {
-    id: 'klong-noi',
-    nameTh: 'วิสาหกิจชุมชนท่องเที่ยวตำบลคลองน้อย',
-    nameEn: 'Klong Noi CBT Community',
-    provinceTh: 'สุราษฎร์ธานี (อ.เมือง)',
-    storyTh: 'ล่องเรือชมสวนผลไม้ผสมผสานและป่าจากริมคลองสายต่างๆ สัมผัสวิถีชีวิตชาวสวนคลองน้อย แปรรูปกระท้อน ทำหัตถกรรมกะลามะพร้าว ชมศูนย์สาธิตการฝึกลิงเพื่อการเกษตร และทานอาหารพื้นบ้านขนมไทยโบราณ',
-    coverImage: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1606744888344-493238951221?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
-    ],
-    foundingYear: 2011,
-    householdsInvolved: 50,
-    leaderNameTh: 'คุณสมพร คลองน้อย',
-    leaderTitleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวตำบลคลองน้อย',
-    leaderAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    keyHighlightsTh: [
-      'ล่องเรือชมสวนผลไม้ผสมผสานและป่าจากริมคลอง',
-      'แปรรูปกระท้อนชิมสายพันธุ์ต่างๆ และทำหัตถกรรมกะลามะพร้าว',
-      'ชมศูนย์สาธิตการฝึกลิงเพื่อการเกษตรวิถีใต้',
-      'ทานอาหารพื้นบ้านคลองน้อยและขนมไทยโบราณ'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 2850000,
-    communityFundSpentThb: 285000,
-    fundProjectsTh: [
-      'กองทุนอนุรักษ์ป่าจากและตลิ่งลำน้ำคลองน้อย',
-      'สนับสนุนกลุ่มอาชีพหัตถกรรมกะลามะพร้าวและงานจักสาน'
-    ]
-  },
-  {
-    id: 'leeled',
-    nameTh: 'กลุ่มท่องเที่ยวโดยชุมชนลีเล็ด',
-    nameEn: 'Leeled CBT Community',
-    provinceTh: 'สุราษฎร์ธานี (อ.พุนพิน)',
-    storyTh: 'ล่องเรือชมระบบนิเวศป่าชายเลนผืนใหญ่ "อเมซอนแห่งสุราษฎร์" ร่วมกิจกรรม CSR ปลูกป่าและเก็บขยะ จัดทีมบิวดิ้งทำบ้านปลา และเรียนรู้งานจักสานและอาหารท้องถิ่น',
-    coverImage: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80'
-    ],
-    foundingYear: 2010,
-    householdsInvolved: 50,
-    leaderNameTh: 'กำนันประเสริฐ ชุมชนลีเล็ด',
-    leaderTitleTh: 'ประธานกลุ่มท่องเที่ยวโดยชุมชนลีเล็ด',
-    leaderAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-    keyHighlightsTh: [
-      'ล่องเรือชมระบบนิเวศป่าชายเลนและอุโมงค์ต้นไม้',
-      'กิจกรรมปลูกป่าชายเลนและเก็บขยะ CSR',
-      'ทีมบิวดิ้งสร้างบ้านปลาเพื่ออนุรักษ์พันธุ์สัตว์น้ำ',
-      'ทำอาหารท้องถิ่นรสเด็ดและงานจักสานพื้นบ้าน'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 3100000,
-    communityFundSpentThb: 310000,
-    fundProjectsTh: [
-      'กองทุนอนุรักษ์และปลูกป่าชายเลนชุมชนลีเล็ด',
-      'ศูนย์ฟื้นฟูพันธุ์สัตว์น้ำและบ้านปลาธรรมชาติ'
-    ]
-  },
-  {
-    id: 'khanam-noi',
-    nameTh: 'วิสาหกิจชุมชนกลุ่มท่องเที่ยวขนำน้อยหอยใหญ่',
-    nameEn: 'Khanam Noi Hoy Yai CBT Community',
-    provinceTh: 'สุราษฎร์ธานี (อ.กาญจนดิษฐ์)',
-    storyTh: 'ล่องเรือชมวิถีชาวประมงชายฝั่ง เรียนรู้การทำฟาร์มหอยนางรมสุราษฎร์ยักษ์และหอยแครงกลางอ่าวบ้านดอน ทานอาหารทะเลสดอร่อยบนขนำกลางทะเล',
-    coverImage: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
-    ],
-    foundingYear: 2013,
-    householdsInvolved: 30,
-    leaderNameTh: 'พี่สุจินต์ กาญจนดิษฐ์',
-    leaderTitleTh: 'ประธานวิสาหกิจกลุ่มท่องเที่ยวขนำน้อยหอยใหญ่',
-    leaderAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80',
-    keyHighlightsTh: [
-      'ล่องเรือชมวิถีชีวิตประมงชายฝั่งอ่าวบ้านดอน',
-      'เรียนรู้ฟาร์มเลี้ยงหอยนางรมยักษ์และหอยแครง',
-      'รับประทานอาหารทะเลสดบนขนำไม้กลางทะเล',
-      'สินค้าซีฟู้ดแปรรูปตรงจากชาวประมง'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 3600000,
-    communityFundSpentThb: 360000,
-    fundProjectsTh: [
-      'กองทุนฟื้นฟูทรัพยากรประมงชายฝั่งอ่าวบ้านดอน',
-      'สวัสดิการชาวประมงพื้นบ้านกลุ่มขนำน้อย'
-    ]
-  },
-  {
     id: 'khao-thep-phithak',
     nameTh: 'วิสาหกิจชุมชนท่องเที่ยวเชิงอนุรักษ์บ้านเขาเทพพิทักษ์',
     nameEn: 'Khao Thep Phithak Eco-Tourism CBT',
@@ -137,7 +46,10 @@ export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
       '/localconnect/weaver-woman-loom-wide.jpg',
       '/localconnect/woven-fabric-closeup.jpg',
       '/localconnect/organic-garden-flower.jpg',
-      '/localconnect/memorial-monument.jpg'
+      '/localconnect/memorial-monument.jpg',
+      '/localconnect/chiew-lan-pha-khaoma.jpg',
+      '/localconnect/chiew-lan-pha-khaoma-1.jpg',
+      '/localconnect/chiew-lan-pha-khaoma-2.jpg'
     ],
     foundingYear: 2014,
     householdsInvolved: 40,
@@ -159,361 +71,310 @@ export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
     ]
   },
   {
-    id: 'chaiya-egg',
-    nameTh: 'วิสาหกิจชุมชนไข่เค็ม อ.ส.ม. ไชยา',
-    nameEn: 'Chaiya Salted Egg CBT Community',
+    id: 'lemed',
+    nameTh: 'วิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด ไชยา',
+    nameEn: 'Ban Lemed Chaiya Agro-Tourism CBT Community',
     provinceTh: 'สุราษฎร์ธานี (อ.ไชยา)',
-    storyTh: 'สัมผัสตำนานไข่เค็มไชยาอันดับหนึ่งของไทย เวิร์กชอปพอกดินจอมปลวกผสมแกลบเผา ชิมไข่เค็มดาว เมนูผัดไทยไข่เค็ม และทำขนมไทยจากไข่เค็มไชยา',
-    coverImage: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80',
+    storyTh: 'ชวนสัมผัสเสน่ห์ของไชยาผ่านเรื่องราว "ข้าวหอมไชยา" ข้าวพื้นเมืองที่สะท้อนภูมิปัญญาการเกษตรของชุมชน เรียนรู้การทำไข่เค็มสูตรดั้งเดิม นั่งรถซาเล้งชมทุ่งนาเขียวขจี และลิ้มรสอาหารพื้นบ้านจากวัตถุดิบท้องถิ่น',
+    coverImage: '/localconnect/lemed-chaiya-4.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/lemed-chaiya-1.jpg',
+      '/localconnect/lemed-chaiya-2.jpg',
+      '/localconnect/lemed-chaiya-3.jpg',
+      '/localconnect/lemed-chaiya-4.jpg',
+      '/localconnect/lemed-chaiya-5.jpg',
+      '/localconnect/lemed-chaiya-6.jpg',
+      '/localconnect/lemed-chaiya-7.jpg',
+      '/localconnect/lemed-chaiya-8.jpg',
+      '/localconnect/lemed-chaiya-9.jpg'
     ],
-    foundingYear: 2008,
-    householdsInvolved: 30,
-    leaderNameTh: 'ป้าจินตนา ไชยา',
-    leaderTitleTh: 'ประธานวิสาหกิจชุมชนไข่เค็ม อ.ส.ม. ไชยา',
-    leaderAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
+    foundingYear: 2018,
+    householdsInvolved: 20,
+    leaderNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด',
+    leaderTitleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด ไชยา',
+    leaderAvatar: '/localconnect/lemed-chaiya-5.jpg',
     keyHighlightsTh: [
-      'เวิร์กชอปพอกดินจอมปลวกและแกลบทำไข่เค็มไชยาแท้',
-      'ทำอาหารและขนมเปี๊ยะไข่เค็มไชยา',
-      'สัมผัสเส้นทางประวัติศาสตร์เมืองเก่าไชยา'
+      'เรียนรู้วิถีเกษตรและเรื่องราวข้าวหอมไชยา ข้าวพื้นเมืองอัตลักษณ์ชุมชน',
+      'ลงมือทำไข่เค็มสูตรดั้งเดิม ต้นกำเนิดไข่แดงเลื่องชื่อของไชยา',
+      'ลิ้มรสอาหารพื้นบ้านจากวัตถุดิบท้องถิ่นรสชาติเรียบง่าย',
+      'นั่งรถซาเล้งชมทุ่งนาเขียวขจีและวิถีชนบทไชยา'
     ],
     activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 1950000,
-    communityFundSpentThb: 195000,
+    totalIncomeGeneratedThb: 850000,
+    communityFundSpentThb: 85000,
     fundProjectsTh: [
-      'กองทุนส่งเสริมกลุ่มแม่บ้านเกษตรกรไชยา',
-      'ทุนการศึกษาเยาวชนคนรุ่นใหม่สืบสานภูมิปัญญาไชยา'
+      'กองทุนอนุรักษ์พันธุ์ข้าวหอมไชยาพื้นเมือง',
+      'ทุนส่งเสริมกลุ่มเกษตรกรและแม่บ้านบ้านเลม็ด'
     ]
   },
   {
-    id: 'surat-elephant',
-    nameTh: 'สุราษฎร์ธานี เอเลเฟ่น เฮาส์',
-    nameEn: 'Surat Thani Elephant House CBT',
-    provinceTh: 'สุราษฎร์ธานี (อ.กาญจนดิษฐ์)',
-    storyTh: 'เรียนรู้ความสัมพันธ์ระหว่างคนกับช้าง สัมผัสวิถีควาญช้างท้องถิ่น ทำอาหารและป้อนอาหารให้ช้าง พายเรือคายัค และทำภาชนะจากมูลช้าง',
-    coverImage: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=80',
+    id: 'koh-raet',
+    nameTh: 'วิสาหกิจชุมชนโฮมสเตย์เกาะแรต',
+    nameEn: 'Koh Raet Homestay CBT Community',
+    provinceTh: 'สุราษฎร์ธานี (อ่าวบ้านดอน)',
+    storyTh: 'ชวนวางความเร่งรีบ เอนกายพักใจในบรรยากาศเรียบง่ายของเกาะแรต สัมผัสวิถีชาวประมงอย่างใกล้ชิด พักโฮมสเตย์อบอุ่น อิ่มอร่อยอาหารทะเลสดใหม่ และเติมสีสันด้วยกิจกรรมชมโลมาสีชมพูในอ่าวบ้านดอน',
+    coverImage: '/localconnect/koh-raet-1.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/koh-raet-1.jpg',
+      '/localconnect/koh-raet-8.jpg',
+      '/localconnect/koh-raet-2.jpg',
+      '/localconnect/koh-raet-3.jpg',
+      '/localconnect/koh-raet-4.jpg',
+      '/localconnect/koh-raet-5.jpg',
+      '/localconnect/koh-raet-6.jpg',
+      '/localconnect/koh-raet-7.jpg'
     ],
-    foundingYear: 2015,
-    householdsInvolved: 30,
-    leaderNameTh: 'พี่สุเทพ ควาญช้างสุราษฎร์',
-    leaderTitleTh: 'ผู้นำศูนย์อนุรักษ์สุราษฎร์ธานี เอเลเฟ่น เฮาส์',
-    leaderAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    keyHighlightsTh: [
-      'สัมผัสวิถีชีวิตความผูกพันระหว่างคนกับช้างอย่างอบอุ่น',
-      'เรียนรู้การปรุงสมุนไพรและทำอาหารสุขภาพให้ช้าง',
-      'พายเรือคายัค และทำกระดาษผาชนะจากมูลช้าง'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 2900000,
-    communityFundSpentThb: 290000,
-    fundProjectsTh: [
-      'กองทุนดูแลอาหารและการแพทย์ช้างในชุมชน',
-      'สวัสดิการครอบครัวควาญช้างสุราษฎร์ธานี'
-    ]
-  },
-  {
-    id: 'koh-phaluai',
-    nameTh: 'ชุมชนท่องเที่ยวเกาะพะลวย',
-    nameEn: 'Koh Phaluai Green Island CBT Community',
-    provinceTh: 'สุราษฎร์ธานี (อ.เกาะสมุย)',
-    storyTh: 'เรียนรู้เรื่องพลังงานสะอาดบนเกาะพะลวย กรีนไอส์แลนด์ ร่วมเก็บขยะชายหาดและปลูกป่าชายเลนเพื่อฟื้นฟูระบบนิเวศเกาะ เดินป่า เข้าถ้ำ และตามหานกเงือกที่ยังคงอาศัยอยู่บนเกาะเล็กกลางอ่าวไทยแห่งนี้',
-    coverImage: '/tceb/koh-phaluai-hornbill.jpg',
-    gallery: [
-      '/tceb/koh-phaluai-hornbill.jpg',
-      '/tceb/koh-phaluai-beach-cleanup.jpg'
-    ],
-    foundingYear: 2016,
-    householdsInvolved: 25,
-    leaderNameTh: 'ทีมชุมชนเกาะพะลวย กรีนไอส์แลนด์',
-    leaderTitleTh: 'ประธานชุมชนท่องเที่ยวเกาะพะลวย',
-    leaderAvatar: '/tceb/koh-phaluai-beach-cleanup.jpg',
-    keyHighlightsTh: [
-      'เรียนรู้เรื่องพลังงานสะอาดบนเกาะพะลวย กรีนไอส์แลนด์',
-      'ร่วมกิจกรรมเก็บขยะชายหาดและปลูกป่าชายเลน',
-      'เดินป่า เข้าถ้ำ และตามหานกเงือกบนเกาะ'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 1500000,
-    communityFundSpentThb: 150000,
-    fundProjectsTh: [
-      'กองทุนพลังงานสะอาดเกาะพะลวย',
-      'กองทุนอนุรักษ์นกเงือกและป่าชายเลนเกาะพะลวย'
-    ]
-  },
-  {
-    id: 'sala-athit-garden',
-    nameTh: 'สวนสละอาทิตย์',
-    nameEn: 'Sala Athit Salak Fruit Garden',
-    provinceTh: 'สุราษฎร์ธานี (อ.บ้านนาสาร)',
-    storyTh: 'เยี่ยมชมสวนสละอาทิตย์ เรียนรู้การจัดการดินและกระบวนการปลูกสละตั้งแต่ต้นจนถึงผลผลิต ชิมสละอาทิตย์สดจากต้นรสหวานฉ่ำ และร่วมกิจกรรมทีมบิวดิ้งท่ามกลางบรรยากาศร่มรื่นในสวน',
-    coverImage: '/tceb/sala-athit-picking.jpg',
-    gallery: [
-      '/tceb/sala-athit-picking.jpg',
-      '/tceb/sala-athit-peeling.jpg'
-    ],
-    foundingYear: 2009,
+    foundingYear: 2019,
     householdsInvolved: 15,
-    leaderNameTh: 'เจ้าของสวนสละอาทิตย์',
-    leaderTitleTh: 'ประธานสวนสละอาทิตย์',
-    leaderAvatar: '/tceb/sala-athit-peeling.jpg',
+    leaderNameTh: 'กลุ่มโฮมสเตย์ชุมชนเกาะแรต',
+    leaderTitleTh: 'ประธานวิสาหกิจชุมชนโฮมสเตย์เกาะแรต',
+    leaderAvatar: '/localconnect/koh-raet-4.jpg',
     keyHighlightsTh: [
-      'เรียนรู้การจัดการดินและกระบวนการผลิตสละอาทิตย์',
-      'ชิมสละอาทิตย์สดจากต้นรสหวานฉ่ำ',
-      'จัดกิจกรรมทีมบิวดิ้งในสวนสละ'
-    ],
-    activeExperiencesCount: 1,
-    totalIncomeGeneratedThb: 900000,
-    communityFundSpentThb: 90000,
-    fundProjectsTh: [
-      'กองทุนพัฒนาพันธุ์สละอาทิตย์',
-      'ทุนส่งเสริมเกษตรกรรุ่นใหม่บ้านนาสาร'
-    ]
-  },
-  {
-    id: 'tai-dam-learning-center',
-    nameTh: 'ศูนย์เรียนรู้ภูมิปัญญาไทดำ',
-    nameEn: 'Tai Dam Wisdom Learning Center',
-    provinceTh: 'สุราษฎร์ธานี (อ.พุนพิน)',
-    storyTh: 'เรียนรู้ภูมิปัญญาชาวไทดำ ชมการแสดงพื้นบ้านโดยกลุ่มเยาวชนสืบสานวัฒนธรรม ทดลองแต่งกายชุดไทดำนุ่งผ้าซิ่นลายแตงโม ลิ้มรสอาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน และล่องเรือชมวิถีชุมชนริมแม่น้ำตาปี',
-    coverImage: '/tceb/tai-dam-dance.jpg',
-    gallery: [
-      '/tceb/tai-dam-dance.jpg',
-      '/tceb/tai-dam-textile-craft.jpg'
-    ],
-    foundingYear: 2013,
-    householdsInvolved: 35,
-    leaderNameTh: 'กลุ่มเยาวชนไทดำท่าข้าม',
-    leaderTitleTh: 'ประธานศูนย์เรียนรู้ภูมิปัญญาไทดำ',
-    leaderAvatar: '/tceb/tai-dam-textile-craft.jpg',
-    keyHighlightsTh: [
-      'ชมการแสดงไทดำโดยกลุ่มเยาวชนสืบสานวัฒนธรรม',
-      'ทดลองแต่งกายชุดไทดำ นุ่งผ้าซิ่นลายแตงโม',
-      'ล่องเรือชมวิถีชุมชนริมแม่น้ำตาปี',
-      'ชิมอาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน'
+      'พักผ่อนสบาย ๆ สัมผัสวิถีชีวิตเรียบง่ายของชาวประมงเกาะแรต',
+      'โฮมสเตย์สะอาดอบอุ่น เจ้าบ้านเป็นมิตรดูแลอย่างเป็นกันเอง',
+      'ลิ้มรสอาหารทะเลสดใหม่จากวัตถุดิบท้องถิ่น',
+      'ล่องเรือชมโลมาสีชมพูในอ่าวบ้านดอน'
     ],
     activeExperiencesCount: 1,
     totalIncomeGeneratedThb: 1200000,
     communityFundSpentThb: 120000,
     fundProjectsTh: [
-      'กองทุนสืบสานวัฒนธรรมไทดำ',
-      'ทุนกลุ่มเยาวชนนาฏศิลป์ไทดำ'
+      'กองทุนพัฒนาโฮมสเตย์ชุมชนเกาะแรต',
+      'กองทุนอนุรักษ์โลมาสีชมพูอ่าวบ้านดอน'
+    ]
+  },
+  {
+    id: 'thatong',
+    nameTh: 'วิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    nameEn: 'Tha Thong CBT Community',
+    provinceTh: 'สุราษฎร์ธานี (อ.เมือง)',
+    storyTh: 'ชวนใช้เวลาสบาย ๆ ริมอ่าวบ้านดอน ลิ้มรสหอยนางรมสดจากฟาร์ม เรียนรู้วิถีประมงชายฝั่ง ล่องเรือพลังงานแสงอาทิตย์ชมคลองท่าทอง และเฝ้าชมพระอาทิตย์ตกริมอ่าวในเส้นทางท่องเที่ยวคาร์บอนต่ำ',
+    coverImage: '/localconnect/thatong-1.jpg',
+    gallery: [
+      '/localconnect/thatong-1.jpg',
+      '/localconnect/thatong-2.jpg',
+      '/localconnect/thatong-3.jpg',
+      '/localconnect/thatong-4.jpg',
+      '/localconnect/thatong-5.jpg',
+      '/localconnect/thatong-6.jpg',
+      '/localconnect/thatong-7.jpg',
+      '/localconnect/thatong-8.jpg'
+    ],
+    foundingYear: 2017,
+    householdsInvolved: 20,
+    leaderNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    leaderTitleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    leaderAvatar: '/localconnect/thatong-1.jpg',
+    keyHighlightsTh: [
+      'ลิ้มรสหอยนางรมสดจากฟาร์ม สัมผัสรสชาติทะเลอ่าวบ้านดอน',
+      'ล่องเรือพลังงานแสงอาทิตย์ชมวิถีริมคลองท่าทอง',
+      'เฝ้าชมพระอาทิตย์ตกริมอ่าวบ้านดอน',
+      'เส้นทางท่องเที่ยวคาร์บอนต่ำที่เป็นมิตรต่อสิ่งแวดล้อม'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 700000,
+    communityFundSpentThb: 70000,
+    fundProjectsTh: [
+      'กองทุนพลังงานสะอาดชุมชนท่าทอง',
+      'กองทุนอนุรักษ์วิถีประมงชายฝั่งอ่าวบ้านดอน'
+    ]
+  },
+  {
+    id: 'wat-prasit',
+    nameTh: 'ศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    nameEn: 'Prasit Panya Learning Center',
+    provinceTh: 'สุราษฎร์ธานี (อ.เมือง)',
+    storyTh: 'เปิดประสบการณ์เรียนรู้ภูมิปัญญาจาก "ต้นจาก" ผ่านกิจกรรมมัดย้อมสีธรรมชาติ ทำขนมไทย และอาหารพื้นบ้าน โดยรายได้ส่วนหนึ่งสนับสนุนการเรียนรู้และสร้างโอกาสให้แก่นักเรียนด้อยโอกาสและนักเรียนกลุ่มเปราะบาง',
+    coverImage: '/localconnect/prasitpanya-1.jpg',
+    gallery: [
+      '/localconnect/prasitpanya-1.jpg',
+      '/localconnect/prasitpanya-4.jpg',
+      '/localconnect/prasitpanya-2.jpg',
+      '/localconnect/prasitpanya-3.jpg',
+      '/localconnect/prasitpanya-5.jpg',
+      '/localconnect/prasitpanya-6.jpg',
+      '/localconnect/prasitpanya-7.jpg'
+    ],
+    foundingYear: 2019,
+    householdsInvolved: 25,
+    leaderNameTh: 'กลุ่มศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    leaderTitleTh: 'ประธานศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    leaderAvatar: '/localconnect/prasitpanya-1.jpg',
+    keyHighlightsTh: [
+      'เรียนรู้ภูมิปัญญาจากต้นจากผ่านกิจกรรมลงมือทำ',
+      'สร้างผ้ามัดย้อมจากสีธรรมชาติของเปลือกลูกจาก',
+      'ทำขนมไทยและอาหารพื้นบ้านจากวัตถุดิบต้นจาก',
+      'รายได้ส่วนหนึ่งส่งต่อโอกาสทางการศึกษาให้เยาวชน'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 650000,
+    communityFundSpentThb: 65000,
+    fundProjectsTh: [
+      'กองทุนทุนการศึกษานักเรียนด้อยโอกาสวัดประสิทธาราม',
+      'กองทุนสืบสานภูมิปัญญาต้นจาก'
+    ]
+  },
+  {
+    id: 'don-han',
+    nameTh: 'วิสาหกิจชุมชนท่องเที่ยว Amazon ดอนหาร',
+    nameEn: 'Amazon Don Han CBT Community',
+    provinceTh: 'สุราษฎร์ธานี (อ.เมือง)',
+    storyTh: 'สัมผัสความมหัศจรรย์ของผืนป่าโกงกางดอนหาร ผ่านเส้นทางท่องเที่ยวคาร์บอนต่ำ เรียนรู้ความสำคัญของระบบนิเวศชายฝั่ง และปล่อยใจไปกับความสงบของสายน้ำและผืนป่า',
+    coverImage: '/localconnect/donhan-3.jpg',
+    gallery: [
+      '/localconnect/donhan-2.jpg',
+      '/localconnect/donhan-1.jpg',
+      '/localconnect/donhan-3.jpg',
+      '/localconnect/donhan-4.jpg',
+      '/localconnect/donhan-5.jpg',
+      '/localconnect/donhan-6.jpg',
+      '/localconnect/donhan-7.jpg',
+      '/localconnect/donhan-8.jpg',
+      '/localconnect/donhan-9.jpg',
+      '/localconnect/donhan-10.jpg',
+      '/localconnect/donhan-11.jpg',
+      '/localconnect/donhan-12.jpg'
+    ],
+    foundingYear: 2018,
+    householdsInvolved: 15,
+    leaderNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยว Amazon ดอนหาร',
+    leaderTitleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวดอนหาร',
+    leaderAvatar: '/localconnect/donhan-3.jpg',
+    keyHighlightsTh: [
+      'สัมผัสความอุดมสมบูรณ์ของระบบนิเวศป่าโกงกางดอนหาร',
+      'ล่องเรือพลังงานแสงอาทิตย์เส้นทางคาร์บอนต่ำ',
+      'เรียนรู้ความสำคัญของระบบนิเวศชายฝั่ง',
+      'ดื่มด่ำความสงบของสายน้ำและผืนป่า'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 750000,
+    communityFundSpentThb: 75000,
+    fundProjectsTh: [
+      'กองทุนอนุรักษ์ป่าโกงกาง Amazon ดอนหาร',
+      'กองทุนพลังงานสะอาดชุมชนดอนหาร'
+    ]
+  },
+  {
+    id: 'bang-bai-mai',
+    nameTh: 'ห้องเรียนธรรมชาติและชุมชน @ บางใบไม้',
+    nameEn: 'Bang Bai Mai Nature & Community Classroom',
+    provinceTh: 'สุราษฎร์ธานี (อ.เมือง)',
+    storyTh: 'เปิดห้องเรียนที่ไม่มีผนัง ให้เด็ก ๆ ได้สัมผัสธรรมชาติและวิถีชีวิตของชุมชนริมคลองบางใบไม้ ผ่านกิจกรรมฐานการเรียนรู้ที่สนุกและลงมือทำจริง ปลูกฝังแนวคิดการท่องเที่ยวที่ใส่ใจสิ่งแวดล้อม',
+    coverImage: '/localconnect/bangbaimai-13.jpg',
+    gallery: [
+      '/localconnect/bangbaimai-1.jpg',
+      '/localconnect/bangbaimai-2.jpg',
+      '/localconnect/bangbaimai-3.jpg',
+      '/localconnect/bangbaimai-4.jpg',
+      '/localconnect/bangbaimai-5.jpg',
+      '/localconnect/bangbaimai-6.jpg',
+      '/localconnect/bangbaimai-7.jpg',
+      '/localconnect/bangbaimai-8.jpg',
+      '/localconnect/bangbaimai-9.jpg',
+      '/localconnect/bangbaimai-10.jpg',
+      '/localconnect/bangbaimai-11.jpg',
+      '/localconnect/bangbaimai-12.jpg',
+      '/localconnect/bangbaimai-13.jpg',
+      '/localconnect/bangbaimai-14.jpg',
+      '/localconnect/bangbaimai-15.jpg',
+      '/localconnect/bangbaimai-16.jpg',
+      '/localconnect/bangbaimai-17.jpg',
+      '/localconnect/bangbaimai-18.jpg'
+    ],
+    foundingYear: 2020,
+    householdsInvolved: 20,
+    leaderNameTh: 'กลุ่มห้องเรียนธรรมชาติและชุมชนบางใบไม้',
+    leaderTitleTh: 'ประธานห้องเรียนธรรมชาติและชุมชน @ บางใบไม้',
+    leaderAvatar: '/localconnect/bangbaimai-3.jpg',
+    keyHighlightsTh: [
+      'เรียนรู้ธรรมชาติ สายน้ำ และวิถีชุมชนริมคลองบางใบไม้',
+      'กิจกรรมฐานการเรียนรู้ 6 ฐาน ออกแบบสำหรับเยาวชน',
+      'ลิ้มรสอาหารพื้นบ้านเรียบง่ายเหมาะกับเด็ก ๆ',
+      'ปลูกฝังแนวคิดการท่องเที่ยวที่ใส่ใจสิ่งแวดล้อม'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 400000,
+    communityFundSpentThb: 40000,
+    fundProjectsTh: [
+      'กองทุนห้องเรียนธรรมชาติบางใบไม้',
+      'กองทุนอนุรักษ์คลองบางใบไม้'
+    ]
+  },
+  {
+    id: 'suan-lung-um',
+    nameTh: 'พิมพ์รดารีสอร์ท สวนลุงอุ่ม',
+    nameEn: 'Pimrada Resort at Suan Lung Um',
+    provinceTh: 'สุราษฎร์ธานี (อ.บ้านตาขุน)',
+    storyTh: 'ใช้เวลาสองวันหนึ่งคืนอย่างเรียบง่าย ณ พิมพ์รดารีสอร์ท ท่ามกลางบรรยากาศร่มรื่นของสวนสมรม "สวนลุงอุ่ม" เก็บวัตถุดิบสดจากสวนมาปรุงอาหารเอง ทำดอกไม้ไหว้พระ และเดินขึ้นเขาชิงชันชมวิวเขื่อนรัชชประภา',
+    coverImage: '/localconnect/suan-lung-um-1.jpg',
+    gallery: [
+      '/localconnect/suan-lung-um-1.jpg',
+      '/localconnect/organic-garden-flower.jpg',
+      '/localconnect/garland-making-2.jpg',
+      '/localconnect/memorial-monument.jpg',
+      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80'
+    ],
+    foundingYear: 2021,
+    householdsInvolved: 10,
+    leaderNameTh: 'ลุงอุ่ม เจ้าของสวนสมรม',
+    leaderTitleTh: 'ประธานพิมพ์รดารีสอร์ท สวนลุงอุ่ม',
+    leaderAvatar: '/localconnect/suan-lung-um-1.jpg',
+    keyHighlightsTh: [
+      'พักผ่อนท่ามกลางความร่มรื่นของสวนสมรม',
+      'เก็บวัตถุดิบสดจากสวนมารังสรรค์อาหารเย็นด้วยตัวเอง',
+      'ประดิษฐ์ช่อดอกไม้จากพืชพรรณในสวน',
+      'เดินขึ้นเขาชิงชันชมวิวชุมชนรอบเขื่อนรัชชประภา'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 900000,
+    communityFundSpentThb: 90000,
+    fundProjectsTh: [
+      'กองทุนพัฒนาสวนสมรมชุมชนบ้านตาขุน',
+      'กองทุนยุวมัคคุเทศก์สวนลุงอุ่ม'
+    ]
+  },
+  {
+    id: 'koh-set',
+    nameTh: 'กลุ่มท่องเที่ยวเชิงอนุรักษ์บ้านพุมเรียง',
+    nameEn: 'Ban Phum Riang Eco-Tourism Group',
+    provinceTh: 'สุราษฎร์ธานี (ต.พุมเรียง อ.ไชยา)',
+    storyTh: 'สัมผัสเสน่ห์ทะเลอ่าวบ้านดอนที่เกาะเสร็จ เกาะเล็กใกล้ฝั่งที่ยังคงความเป็นธรรมชาติ ร่วมกิจกรรม CSR ปล่อยปูและดูแลป่าโกงกาง สนุกกับการหาหอย และพักผ่อนบนหาดทรายที่เป็นส่วนตัว',
+    coverImage: '/localconnect/kohset-2.jpg',
+    gallery: [
+      '/localconnect/kohset-2.jpg',
+      '/localconnect/kohset-1.jpg',
+      '/localconnect/kohset-4.jpg',
+      '/localconnect/kohset-3.jpg',
+      '/localconnect/kohset-5.jpg'
+    ],
+    foundingYear: 2018,
+    householdsInvolved: 20,
+    leaderNameTh: 'คุณจรินทร์ เฉยเชยชม',
+    leaderTitleTh: 'ประธานกลุ่มท่องเที่ยวเชิงอนุรักษ์บ้านพุมเรียง โทร. 092-379-3969',
+    leaderAvatar: '/localconnect/kohset-2.jpg',
+    keyHighlightsTh: [
+      'ร่วมกิจกรรม CSR ปล่อยปูและดูแลป่าโกงกาง',
+      'สนุกกับการหาหอยนานาชนิดในอ่าวบ้านดอน',
+      'พักผ่อนบนหาดทรายส่วนตัวของเกาะเล็กใกล้ฝั่ง',
+      'เที่ยวสนุก พร้อมส่งต่อคุณค่าให้ธรรมชาติและชุมชน'
+    ],
+    activeExperiencesCount: 1,
+    totalIncomeGeneratedThb: 1100000,
+    communityFundSpentThb: 110000,
+    fundProjectsTh: [
+      'บ้านปลาธนาคารปู',
+      'กองทุนอนุรักษ์ป่าโกงกางเกาะเสร็จ',
+      'กองทุน CSR ปล่อยพันธุ์สัตว์น้ำอ่าวบ้านดอน'
     ]
   }
 ];
 
 export const SAMPLE_EXPERIENCES: Experience[] = [
   {
-    id: 'klong-noi-canal-tour',
-    titleTh: 'ล่องเรือสวนผลไม้ ป่าจากริมคลอง หัตถกรรมกะลามะพร้าว และศูนย์ฝึกลิงเพื่อการเกษตร',
-    titleEn: 'Klong Noi Canal Fruit Orchard & Coconut Shell Handcraft Tour',
-    subtitleTh: 'นั่งเรือหางยาวชมสวนผลไม้ผสมผสาน ป่าจากริมคลอง ฝึกลิงเพื่อการเกษตร และทำขนมไทยโบราณ',
-    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวตำบลคลองน้อย',
-    communityNameEn: 'Klong Noi CBT Community',
-    communityId: 'klong-noi',
-    locationTh: 'อ.เมือง จ.สุราษฎร์ธานี',
-    locationEn: 'Mueang, Surat Thani',
-    region: 'south',
-    category: 'culture',
-    priceThbPerPerson: 1250,
-    durationText: '1 วัน (09:00 - 15:00 น.)',
-    maxGroupSize: 15,
-    rating: 4.92,
-    reviewCount: 42,
-    coverImage: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1200&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1606744888344-493238951221?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
-    ],
-    descriptionTh: 'ล่องเรือชมสวนผลไม้และป่าจากริมคลองสายคลองน้อย เรียนรู้วิถีชีวิตชาวสวนผลไม้ปักษ์ใต้ แปรรูปกระท้อนหวานฉ่ำ ชิมผลิตภัณฑ์จากกะลามะพร้าว ชมศูนย์สาธิตการฝึกลิงเพื่อการเกษตรอย่างใกล้ชิด และรับประทานอาหารพื้นบ้านปักษ์ใต้แท้',
-    highlightsTh: [
-      'ล่องเรือหางยาวชมระบบนิเวศลำน้ำป่าจากและสวนผลไม้ริมคลอง',
-      'เวิร์กชอปทำหัตถกรรมจากกะลามะพร้าวและแปรรูปกระท้อน',
-      'เยี่ยมชมศูนย์สาธิตการฝึกลิงเก็บมะพร้าวเพื่อการเกษตร',
-      'ทานอาหารพื้นบ้านแกงส้มปลาคลอง และขนมไทยโบราณ'
-    ],
-    includedTh: [
-      'ค่าเรือหางยาวนำเที่ยวตลอดเส้นทาง',
-      'อาหารกลางวันปักษ์ใต้และผลไม้สดในสวน',
-      'อุปกรณ์ทำหัตถกรรมกะลามะพร้าว',
-      'มัคคุเทศก์ท้องถิ่นชาวสวนคลองน้อย'
-    ],
-    itinerary: [
-      { time: '09:00', titleTh: 'ลงเรือหางยาวท่าคลองน้อย', descTh: 'รับฟังบรรยายประวัติศาสตร์ลำน้ำคลองน้อยและจิบน้ำมะพร้าวสด' },
-      { time: '10:15', titleTh: 'ชมสวนผลไม้ & แปรรูปกระท้อน', descTh: 'เดินชมสวนกระท้อน สวนมะพร้าว และทดลองทำผลิตภัณฑ์กะลามะพร้าว' },
-      { time: '12:00', titleTh: 'ทานอาหารพื้นบ้านริมคลอง', descTh: 'ลิ้มรสแกงส้มปลา คั่วกลิ้ง และขนมไทยโบราณ' },
-      { time: '13:30', titleTh: 'ชมศูนย์สาธิตการฝึกลิงเกษตร', descTh: 'เรียนรู้ภูมิปัญญาการฝึกลิงมะพร้าววิถีไทยเดิม' }
-    ],
-    hostNameTh: 'คุณสมพร คลองน้อย',
-    hostRoleTh: 'ประธานวิสาหกิจชุมชนคลองน้อย',
-    hostAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    breakdownLevel1: {
-      communitySharePct: 77,
-      paymentGatewayPct: 3,
-      communityManagerPct: 4,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
-    },
-    distributionLevel2: {
-      homestayPct: 10,
-      guideLeaderPct: 35,
-      localMealsPct: 30,
-      localTransportPct: 10,
-      communityFundPct: 15
-    },
-    impact: {
-      jobsSupported: 6,
-      treesPlanted: 8,
-      localIncomeGeneratedThb: 962,
-      culturalPreservationItems: ['สืบสานสวนผลไม้ป่าจากริมคลอง', 'กองทุนอนุรักษ์ตลิ่งลำน้ำ']
-    },
-    isFeatured: true,
-    isB2BRecommended: true
-  },
-  {
-    id: 'leeled-mangrove-amazon',
-    titleTh: 'ล่องเรืออุโมงค์ต้นไม้ป่าชายเลน "อเมซอนแห่งสุราษฎร์" กิจกรรม CSR ปลูกป่า และสร้างบ้านปลา',
-    titleEn: 'Leeled Mangrove Amazon Boat Tour & Fish House CSR',
-    subtitleTh: 'สัมผัสอุโมงค์ต้นไม้ป่าชายเลนผืนใหญ่ CSR ปลูกป่าชายเลน และทำกิจกรรมทีมบิวดิ้ง',
-    communityNameTh: 'กลุ่มท่องเที่ยวโดยชุมชนลีเล็ด',
-    communityNameEn: 'Leeled CBT Community',
-    communityId: 'leeled',
-    locationTh: 'อ.พุนพิน จ.สุราษฎร์ธานี',
-    locationEn: 'Phunphin, Surat Thani',
-    region: 'south',
-    category: 'nature',
-    priceThbPerPerson: 1400,
-    durationText: '1 วัน (08:30 - 15:30 น.)',
-    maxGroupSize: 30,
-    rating: 4.95,
-    reviewCount: 58,
-    coverImage: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80'
-    ],
-    descriptionTh: 'ตื่นตาตื่นใจกับ "อเมซอนแห่งสุราษฎร์" ในป่าชายเลนลีเล็ด ล่องเรือชมอุโมงค์โกงกางที่สมบูรณ์ที่สุด ร่วมกิจกรรม CSR ปลูกกล้าไม้ชายเลนและเก็บขยะเพื่อรักษาสิ่งแวดล้อม สนุกกับทีมบิวดิ้งสร้างบ้านปลา และทานอาหารประมงป่าชายเลน',
-    highlightsTh: [
-      'ล่องเรือชมอุโมงค์ต้นไม้โกงกางและนกน้ำป่าชายเลนลีเล็ด',
-      'กิจกรรม CSR ปลูกฝักโกงกางและเก็บขยะชายฝั่ง',
-      'ทีมบิวดิ้งประดิษฐ์ซุ้มบ้านปลาเพื่ออนุรักษ์พันธุ์สัตว์น้ำ',
-      'ทานอาหารทะเลป่าชายเลน ปูก้อน แกงส้ม และกุ้งสด'
-    ],
-    includedTh: [
-      'เรือนำเที่ยวป่าชายเลนและเสื้อชูชีพมาตรฐาน',
-      'ต้นกล้าไม้ชายเลนและอุปกรณ์ปลูกป่า CSR',
-      'อาหารกลางวันซีฟู้ดป่าชายเลน 1 มื้อ',
-      'วิทยากรและทีมไกด์ชุมชนลีเล็ด'
-    ],
-    itinerary: [
-      { time: '08:30', titleTh: 'ปฐมนิเทศ ณ ศูนย์เรียนรู้ลีเล็ด', descTh: 'ต้อนรับด้วยเครื่องดื่มสมุนไพรและฟังเรื่องราวป่าชายเลน' },
-      { time: '09:30', titleTh: 'ล่องเรือชมอเมซอนสุราษฎร์', descTh: 'ลอดอุโมงค์โกงกางธรรมชาติตระการตา' },
-      { time: '11:00', titleTh: 'กิจกรรม CSR ปลูกป่า & บ้านปลา', descTh: 'ร่วมใจปลูกป่าโกงกางและประกอบซุ้มบ้านปลาปล่อยสู่ลำน้ำ' },
-      { time: '12:30', titleTh: 'มื้อกลางวันซีฟู้ดชุมชนลีเล็ด', descTh: 'อร่อยกับอาหารทะเลสดใหม่ปรุงสไตล์ชาวบ้าน' }
-    ],
-    hostNameTh: 'กำนันประเสริฐ ชุมชนลีเล็ด',
-    hostRoleTh: 'ประธานกลุ่มท่องเที่ยวชุมชนลีเล็ด',
-    hostAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-    breakdownLevel1: {
-      communitySharePct: 79,
-      paymentGatewayPct: 3,
-      communityManagerPct: 2,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
-    },
-    distributionLevel2: {
-      homestayPct: 5,
-      guideLeaderPct: 35,
-      localMealsPct: 30,
-      localTransportPct: 10,
-      communityFundPct: 20
-    },
-    impact: {
-      jobsSupported: 10,
-      treesPlanted: 25,
-      localIncomeGeneratedThb: 1106,
-      culturalPreservationItems: ['กองทุนฟื้นฟูป่าชายเลนลีเล็ด', 'ธนาคารบ้านปลา']
-    },
-    isFeatured: true,
-    isB2BRecommended: true
-  },
-  {
-    id: 'khanam-noi-oyster',
-    titleTh: 'ฟาร์มหอยนางรมสุราษฎร์ยักษ์อ่าวบ้านดอน และจัดเลี้ยงซีฟู้ดสดบนขนำกลางทะเล',
-    titleEn: 'Khanam Noi Giant Oyster Farm & Sea Cabin Seafood Feast',
-    subtitleTh: 'สัมผัสฟาร์มหอยนางรมสุราษฎร์ยักษ์และหอยแครง ชิมซีฟู้ดสดๆ กลางอ่าวบ้านดอน',
-    communityNameTh: 'วิสาหกิจชุมชนกลุ่มท่องเที่ยวขนำน้อยหอยใหญ่',
-    communityNameEn: 'Khanam Noi Hoy Yai CBT Community',
-    communityId: 'khanam-noi',
-    locationTh: 'อ.กาญจนดิษฐ์ จ.สุราษฎร์ธานี',
-    locationEn: 'Kanchanadit, Surat Thani',
-    region: 'south',
-    category: 'food',
-    priceThbPerPerson: 1650,
-    durationText: '1 วัน (10:00 - 15:00 น.)',
-    maxGroupSize: 20,
-    rating: 4.98,
-    reviewCount: 74,
-    coverImage: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
-    ],
-    descriptionTh: 'ล่องเรือชมความยิ่งใหญ่ของฟาร์มหอยนางรมสุราษฎร์ธานีอันเลื่องชื่อระดับโลก เรียนรู้วิธีการเลี้ยงหอยนางรมยักษ์และหอยแครงกลางทะเลอ่าวบ้านดอน จากนั้นขึ้นนั่งพักผ่อนทานอาหารทะเลสดจัดเต็มบนขนำไม้กลางอ่าวสัมผัสลมทะเลเย็นสบาย',
-    highlightsTh: [
-      'ล่องเรือประมงท้องถิ่นชมแปลงเลี้ยงหอยนางรมยักษ์และหอยแครง',
-      'สาธิตการงมและแกะหอยนางรมสดๆ จากแปลงเลี้ยงกลางทะเล',
-      'จัดเลี้ยงอาหารทะเลสด หอยนางรมยักษ์ หอยแครง กุ้ง ปู บนขนำกลางทะเล',
-      'สนับสนุนเศรษฐกิจประมงพื้นบ้านกาญจนดิษฐ์โดยตรง'
-    ],
-    includedTh: [
-      'เรือประมงนำเที่ยวและเสื้อชูชีพ',
-      'มื้ออาหารกลางวันซีฟู้ดจัดเต็มบนขนำกลางทะเล',
-      'หอยนางรมยักษ์สุราษฎร์สดพร้อมเครื่องเคียงกระถินหอมเจียว',
-      'ประกันอุบัติเหตุทางน้ำ'
-    ],
-    itinerary: [
-      { time: '10:00', titleTh: 'ลงเรือ ณ ท่าเรือท่าทองใหม่', descTh: 'สวมเสื้อชูชีพและล่องเรือชมทัศนียภาพอ่าวบ้านดอน' },
-      { time: '10:45', titleTh: 'เยี่ยมชมฟาร์มหอยนางรมยักษ์', descTh: 'ชมแปลงเลี้ยงหอยนางรมและสาธิตการแกะหอยสด' },
-      { time: '12:00', titleTh: 'รับประทานซีฟู้ดบนขนำกลางทะเล', descTh: 'อิ่มอร่อยกับหอยนางรมยักษ์สด กุ้ง ปู และอาหารทะเลเผา' },
-      { time: '14:00', titleTh: 'พักผ่อนรับลมทะเลและเดินทางกลับ', descTh: 'ชมวิถีชาวประมงชายฝั่งและเดินทางกลับเข้าสู่ฝั่ง' }
-    ],
-    hostNameTh: 'พี่สุจินต์ กาญจนดิษฐ์',
-    hostRoleTh: 'ประธานวิสาหกิจขนำน้อยหอยใหญ่',
-    hostAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80',
-    breakdownLevel1: {
-      communitySharePct: 80,
-      paymentGatewayPct: 3,
-      communityManagerPct: 2,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 13
-    },
-    distributionLevel2: {
-      homestayPct: 15,
-      guideLeaderPct: 30,
-      localMealsPct: 35,
-      localTransportPct: 5,
-      communityFundPct: 15
-    },
-    impact: {
-      jobsSupported: 8,
-      treesPlanted: 10,
-      localIncomeGeneratedThb: 1320,
-      culturalPreservationItems: ['สืบสานฟาร์มหอยนางรมยักษ์สุราษฎร์', 'กองทุนกลุ่มประมงขนำน้อย']
-    },
-    isFeatured: true,
-    isB2BRecommended: true
-  },
-  {
     id: 'khao-thep-phithak-suspension',
-    titleTh: 'Heart of Khlong Sang: ไหว้พระวัดเขาพัง เดินสะพานแขวนภูเขารูปหัวใจ และชิมทุเรียนคลองแสงร้อยปี',
+    titleTh: 'เขาเทพพิทักษ์: การเดินทางด้วยหัวใจ',
     titleEn: 'Heart of Khlong Sang: A Journey into Nature and Local Life',
-    subtitleTh: 'สัมผัสศรัทธาชาวคลองแสง เดินข้ามสะพานแขวนภูเขารูปหัวใจ และเรียนรู้วิถีสวนยางพาราทุเรียนโบราณ',
+    subtitleTh: 'เดินทางอย่างมีความหมาย สัมผัสเสน่ห์แห่งวิถีชุมชนริมคลองแสง-สายน้ำจากเขื่อนรัชชประภา',
     communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวเชิงอนุรักษ์บ้านเขาเทพพิทักษ์',
     communityNameEn: 'Khao Thep Phithak Eco-Tourism CBT',
     communityId: 'khao-thep-phithak',
@@ -521,9 +382,9 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
     locationEn: 'Ban Ta Khun, Surat Thani',
     region: 'south',
     category: 'nature',
-    priceThbPerPerson: 900,
-    durationText: 'ครึ่งวัน (10:00 - 14:00 น.)',
-    maxGroupSize: 15,
+    priceThbPerPerson: 1100,
+    durationText: '4 ชั่วโมง (10:00 - 14:00 น.)',
+    maxGroupSize: 10,
     rating: 4.96,
     reviewCount: 62,
     coverImage: '/localconnect/suspension-bridge-wide.jpg',
@@ -534,46 +395,50 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/elder-luk-wue-craft.jpg',
       '/localconnect/local-food-dishes.jpg'
     ],
-    descriptionTh: 'เรื่องราวของชาวคลองแสง สัมผัสความศรัทธาของคนในชุมชนเขาพังที่มีต่อพุทธศาสนา ณ วัดเขาพัง เดินข้ามสะพานแขวนภูเขารูปหัวใจ ไปเชื่อมต่อกับธรรมชาติในอ้อมกอดของภูเขา เรียนรู้วิถีการทำสวนยางพาราและสวนผลไม้ที่มีทุเรียนคลองแสงร้อยปีที่โด่งดัง เปิดประสบการณ์การทำอาหารท้องถิ่นและลิ้มรสอาหารพื้นบ้านที่ดีต่อสุขภาพ และสนุกกับของเล่นพื้นบ้าน "ลูกหวือ" ผ่านการถ่ายทอดของผู้สูงอายุที่ต้องการรักษาและส่งต่อคุณค่าความดั้งเดิม',
+    descriptionTh: 'สัมผัสเรื่องราวและวิถีชีวิตของชุมชนคลองแสง เริ่มต้นด้วยการเรียนรู้ความศรัทธาของชาวชุมชนเขาพัง ณ วัดเขาพัง ข้ามสะพานแขวนภูเขารูปหัวใจ เชื่อมโยงกับธรรมชาติท่ามกลางอ้อมกอดของขุนเขา เรียนรู้วิถีสวนยางและสวนผลไม้ พร้อมลิ้มรสทุเรียนคลองแสงร้อยปี เปิดประสบการณ์ทำอาหารพื้นถิ่นเพื่อสุขภาพ และสนุกกับ "ลูกหวือ" ของเล่นพื้นบ้านที่ถ่ายทอดจากผู้สูงอายุ สะท้อนภูมิปัญญาและคุณค่าที่ชุมชนตั้งใจรักษาและส่งต่อจากรุ่นสู่รุ่น',
     highlightsTh: [
-      'เรื่องราวของชาวคลองแสง สัมผัสความศรัทธาที่มีต่อพุทธศาสนา ณ วัดเขาพัง',
-      'เดินข้ามสะพานแขวนภูเขารูปหัวใจ เชื่อมต่อธรรมชาติในอ้อมกอดของภูเขา',
-      'เรียนรู้วิถีสวนยางพาราและสวนผลไม้ ชิมทุเรียนคลองแสงร้อยปีที่โด่งดัง',
-      'ลิ้มรสอาหารท้องถิ่นเพื่อสุขภาพ และสนุกกับของเล่นพื้นบ้าน "ลูกหวือ"'
+      'เรื่องราวของชาวคลองแสง สัมผัสความศรัทธาของคนในชุมชนเขาพังที่มีต่อพุทธศาสนา ที่วัดเขาพัง',
+      'ข้ามสะพานแขวนภูเขารูปหัวใจ ไปเชื่อมต่อกับธรรมชาติในอ้อมกอดของภูเขา',
+      'เรียนรู้วิถีการทำสวนยางพารา สวนผลไม้ ที่มีทุเรียนคลองแสงร้อยปีที่โด่งดัง',
+      'เปิดประสบการณ์การทำอาหารท้องถิ่น และลิ้มรสชาติอาหารพื้นบ้านที่ดีต่อสุขภาพ',
+      'สนุกกับของเล่นพื้นบ้าน "ลูกหวือ" ผ่านการถ่ายทอดของผู้สูงอายุที่ต้องการรักษาและส่งต่อคุณค่าความดั้งเดิม'
     ],
     includedTh: [
-      'ไกด์นำเที่ยวชุมชนบ้านเขาเทพพิทักษ์ตลอดโปรแกรม',
-      'อาหารท้องถิ่นเพื่อสุขภาพพร้อมผลไม้ตามฤดูกาล',
-      'ค่าเข้าชมสะพานแขวนภูเขารูปหัวใจ',
-      'ของเล่นพื้นบ้าน "ลูกหวือ" ทำมือ นำกลับบ้าน'
+      'ไกด์ท้องถิ่น (Local guide)',
+      'กิจกรรมทำอาหารท้องถิ่น (Cooking class)',
+      'อาหารกลางวันร่วมกับคนในชุมชน (Lunch with locals)',
+      'ของเล่นพื้นบ้าน "ลูกหวือ" เป็นของที่ระลึก (Folk toy as a souvenir)'
     ],
     itinerary: [
       { time: '10:00', titleTh: 'ไหว้พระวัดเขาพัง', descTh: 'สัมผัสความศรัทธาของชาวชุมชนคลองแสงที่มีต่อพุทธศาสนา' },
       { time: '10:45', titleTh: 'เดินข้ามสะพานแขวนภูเขารูปหัวใจ', descTh: 'เชื่อมต่อกับธรรมชาติในอ้อมกอดของภูเขา ถ่ายภาพวิวอันซีน' },
       { time: '11:30', titleTh: 'เรียนรู้วิถีสวนยางพาราและทุเรียนคลองแสง', descTh: 'ชมสวนผลไม้และชิมทุเรียนคลองแสงร้อยปีที่โด่งดัง' },
-      { time: '12:30', titleTh: 'อาหารท้องถิ่นเพื่อสุขภาพ', descTh: 'ลิ้มรสอาหารพื้นบ้านและสนุกกับของเล่นพื้นบ้าน "ลูกหวือ"' }
+      { time: '12:30', titleTh: 'อาหารท้องถิ่นเพื่อสุขภาพ', descTh: 'Cooking class และลิ้มรสอาหารพื้นบ้านร่วมกับคนในชุมชน' },
+      { time: '13:30', titleTh: 'สนุกกับ "ลูกหวือ" ของเล่นพื้นบ้าน', descTh: 'เรียนรู้ของเล่นพื้นบ้านจากผู้สูงอายุ ก่อนเดินทางกลับ' }
     ],
     hostNameTh: 'ผู้ใหญ่บ้านสมศักดิ์ บ้านเขาพัง',
     hostRoleTh: 'ประธานวิสาหกิจบ้านเขาเทพพิทักษ์',
     hostAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
     breakdownLevel1: {
-      communitySharePct: 78,
-      paymentGatewayPct: 3,
-      communityManagerPct: 3,
-      insuranceSupportPct: 2,
+      communitySharePct: 82,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
       platformDevOpsPct: 14
     },
     distributionLevel2: {
       homestayPct: 0,
-      guideLeaderPct: 40,
-      localMealsPct: 30,
-      localTransportPct: 10,
-      communityFundPct: 20
+      guideLeaderPct: 33,
+      localMealsPct: 42,
+      localTransportPct: 0,
+      communityFundPct: 11,
+      handicraftPct: 9,
+      insurancePct: 5
     },
     impact: {
       jobsSupported: 6,
       treesPlanted: 8,
-      localIncomeGeneratedThb: 702,
+      localIncomeGeneratedThb: 900,
       culturalPreservationItems: ['อนุรักษ์พันธุ์ทุเรียนคลองแสงร้อยปี', 'สืบสานของเล่นพื้นบ้าน "ลูกหวือ"']
     },
     isFeatured: true,
@@ -581,9 +446,9 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
   },
   {
     id: 'chiew-lan-local-journey',
-    titleTh: 'Local Journey of Ban Chiew Lan: เยือนวิสาหกิจผ้าทอ ทดลองกรอด้ายทอผ้า และร้อยมาลัยถวายพระปรมาภิไธย',
-    titleEn: 'Local Journey of Ban Chiew Lan: Weaving Workshop & Organic Garden Experience',
-    subtitleTh: 'ทดลองกรอด้ายและทอผ้าเอง เยือนสวนเกษตรอินทรีย์ และลิ้มรสอาหารท้องถิ่นเพื่อสุขภาพ',
+    titleTh: 'บ้านเชี่ยวหลาน…….ทอผ้า ทอใจ',
+    titleEn: 'Ban Chiew Lan: Weaving Threads, Weaving Hearts',
+    subtitleTh: 'ทอใจไปกับเส้นด้าย • สร้างสรรค์ของที่ระลึกด้วยมือ • ลิ้มรสอาหารพื้นบ้านเพื่อสุขภาพ',
     communityNameTh: 'วิสาหกิจชุมชนผ้าทอบ้านเชี่ยวหลาน',
     communityNameEn: 'Ban Chiew Lan Weaving CBT Community',
     communityId: 'chiew-lan',
@@ -591,9 +456,9 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
     locationEn: 'Ban Ta Khun, Surat Thani',
     region: 'south',
     category: 'craft',
-    priceThbPerPerson: 900,
-    durationText: 'ครึ่งวัน (10:00 - 14:00 น.)',
-    maxGroupSize: 15,
+    priceThbPerPerson: 2100,
+    durationText: '6 ชั่วโมง (09:00 - 15:00 น.)',
+    maxGroupSize: 4,
     rating: 4.9,
     reviewCount: 9,
     coverImage: '/localconnect/weaver-man-loom.jpg',
@@ -603,381 +468,664 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/woven-fabric-closeup.jpg',
       '/localconnect/organic-garden-flower.jpg',
       '/localconnect/memorial-monument.jpg',
-      '/localconnect/thai-food-plate.jpg'
+      '/localconnect/thai-food-plate.jpg',
+      '/localconnect/chiew-lan-pha-khaoma.jpg',
+      '/localconnect/chiew-lan-pha-khaoma-1.jpg',
+      '/localconnect/chiew-lan-pha-khaoma-2.jpg'
     ],
-    descriptionTh: 'ต้อนรับด้วย Welcome Drink พร้อมขนมไทยแท้ เดินชมสวนเกษตรอินทรีย์ พบปะเจ้าของสวนและสัมผัสความสดชื่นของธรรมชาติ ร่วมร้อยมาลัยเพื่อนำไปถวาย ณ แท่นพระปรมาภิไธย รับประทานอาหารท้องถิ่นเพื่อสุขภาพพร้อมขนมหวานท้องถิ่นเติมความอร่อย เยือนวิสาหกิจชุมชนผ้าทอบ้านเชี่ยวหลาน ชมความประณีตของผืนผ้าทอมือ ทดลองกรอด้ายและทอผ้าเอง สัมผัสวิธีการทำอย่างใกล้ชิด ผ่านกิจกรรม Workshop จากผ้าทอบ้านเชี่ยวหลาน',
+    descriptionTh: 'ชวนคุณชะลอความเร่งรีบ แล้วกลับมาอยู่กับตัวเองผ่านการปั่นด้ายและทอผ้า ฝึกสมาธิไปกับจังหวะของมือและเส้นด้าย สร้างของที่ระลึกด้วยตัวเอง และลิ้มรสอาหารพื้นบ้านเพื่อสุขภาพ ท่ามกลางวิถีเรียบง่ายของบ้านเชี่ยวหลาน',
     highlightsTh: [
-      'ต้อนรับด้วย Welcome Drink พร้อมขนมไทยแท้',
-      'เดินชมสวนเกษตรอินทรีย์ พบปะเจ้าของสวนและสัมผัสธรรมชาติ',
-      'ร่วมร้อยมาลัยถวาย ณ แท่นพระปรมาภิไธย',
-      'เยือนวิสาหกิจผ้าทอบ้านเชี่ยวหลาน ทดลองกรอด้ายและทอผ้าเอง'
+      'ทอใจไปกับเส้นด้าย — เรียนรู้การปั่นด้ายและทอผ้าอย่างช้า ๆ พร้อมสัมผัสความสงบและสมาธิจากงานหัตถกรรม',
+      'ถักทอความทรงจำ — สร้างสรรค์ของที่ระลึก D.I.Y. จากเส้นด้ายด้วยตัวเอง',
+      'อิ่มอร่อยจากวิถีพื้นถิ่น — ลิ้มรสอาหารพื้นบ้านที่สะท้อนภูมิปัญญาและส่งเสริมสุขภาพ'
     ],
     includedTh: [
-      'เครื่องดื่มต้อนรับและขนมไทยแท้',
-      'อาหารกลางวันท้องถิ่นเพื่อสุขภาพพร้อมขนมหวานท้องถิ่น',
-      'อุปกรณ์เวิร์กชอปกรอด้ายและทอผ้า',
-      'วิทยากรกลุ่มทอผ้าบ้านเชี่ยวหลาน'
+      'กิจกรรมปั่นด้าย-ทอผ้าขาวม้า',
+      'ของที่ระลึกทำจากผ้าขาวม้าทอมือ',
+      'อาหารกลางวันเมนูสมุนไพรพื้นบ้าน 1 มื้อ',
+      'อาหารว่างเพื่อสุขภาพ'
     ],
     itinerary: [
-      { time: '10:00', titleTh: 'ต้อนรับด้วย Welcome Drink', descTh: 'จิบเครื่องดื่มต้อนรับพร้อมขนมไทยแท้ก่อนเริ่มทริป' },
-      { time: '10:30', titleTh: 'เดินชมสวนเกษตรอินทรีย์', descTh: 'พบปะเจ้าของสวนและร่วมร้อยมาลัยถวาย ณ แท่นพระปรมาภิไธย' },
-      { time: '12:00', titleTh: 'อาหารท้องถิ่นเพื่อสุขภาพ', descTh: 'ลิ้มรสอาหารพื้นบ้านพร้อมขนมหวานท้องถิ่นเติมความอร่อย' },
-      { time: '13:00', titleTh: 'เวิร์กชอปกรอด้ายและทอผ้า', descTh: 'เยือนวิสาหกิจผ้าทอบ้านเชี่ยวหลาน ทดลองทอผ้าเองอย่างใกล้ชิด' }
+      { time: '09:00', titleTh: 'ต้อนรับและเริ่มปั่นด้าย', descTh: 'เรียนรู้การปั่นด้ายอย่างช้า ๆ สัมผัสความสงบและสมาธิจากจังหวะของมือ' },
+      { time: '10:30', titleTh: 'ทอผ้าขาวม้าด้วยมือ', descTh: 'ฝึกทอผ้าขาวม้ากับช่างทอบ้านเชี่ยวหลานอย่างใกล้ชิด' },
+      { time: '12:00', titleTh: 'อาหารกลางวันเมนูสมุนไพรพื้นบ้าน', descTh: 'ลิ้มรสอาหารพื้นถิ่นเพื่อสุขภาพ 1 มื้อ พร้อมอาหารว่าง' },
+      { time: '13:30', titleTh: 'สร้างของที่ระลึก D.I.Y.', descTh: 'ประดิษฐ์ของที่ระลึกจากผ้าขาวม้าทอมือด้วยตัวเอง ก่อนเดินทางกลับ 15:00 น.' }
     ],
     hostNameTh: 'กลุ่มทอผ้าบ้านเชี่ยวหลาน',
     hostRoleTh: 'ประธานวิสาหกิจชุมชนผ้าทอบ้านเชี่ยวหลาน',
     hostAvatar: '/localconnect/weaver-man-loom.jpg',
     breakdownLevel1: {
-      communitySharePct: 78,
-      paymentGatewayPct: 3,
-      communityManagerPct: 3,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
+      communitySharePct: 83,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 13
     },
     distributionLevel2: {
       homestayPct: 0,
-      guideLeaderPct: 50,
-      localMealsPct: 25,
-      localTransportPct: 5,
-      communityFundPct: 20
+      guideLeaderPct: 11,
+      localMealsPct: 17,
+      localTransportPct: 0,
+      communityFundPct: 3,
+      handicraftPct: 69,
+      insurancePct: 0
     },
     impact: {
       jobsSupported: 8,
       treesPlanted: 4,
-      localIncomeGeneratedThb: 702,
+      localIncomeGeneratedThb: 1750,
       culturalPreservationItems: ['สืบสานภูมิปัญญาผ้าทอบ้านเชี่ยวหลาน', 'อนุรักษ์ลายผ้าทอมือดั้งเดิม']
     },
     isFeatured: true,
     isB2BRecommended: true
   },
   {
-    id: 'chaiya-salted-egg-workshop',
-    titleTh: 'เวิร์กชอปพอกดินจอมปลวกผสมแกลบเผาทำไข่เค็มไชยา และชิมผัดไทยไข่เค็ม',
-    titleEn: 'Chaiya Salted Egg Clay Coating Workshop & Old Town Gastronomy',
-    subtitleTh: 'เรียนรู้สูตรลับไข่เค็มไชยาอันดับ 1 พอกดินจอมปลวกผสมแกลบเผา และชิมเมนูเด็ด',
-    communityNameTh: 'วิสาหกิจชุมชนไข่เค็ม อ.ส.ม. ไชยา',
-    communityNameEn: 'Chaiya Salted Egg CBT Community',
-    communityId: 'chaiya-egg',
-    locationTh: 'อ.ไชยา จ.สุราษฎร์ธานี',
+    id: 'lemed-chaiya-rice-egg',
+    titleTh: 'ข้าวหอม-ไข่เค็ม…..เต็มคำที่ไชยา',
+    titleEn: 'Chaiya Fragrant Rice & Salted Egg: A Full Bite of Local Flavor',
+    subtitleTh: 'จากท้องนา สู่สำรับ จากภูมิปัญญา สู่รสชาติ',
+    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด ไชยา',
+    communityNameEn: 'Ban Lemed Chaiya Agro-Tourism CBT Community',
+    communityId: 'lemed',
+    locationTh: 'ต.เลม็ด อ.ไชยา จ.สุราษฎร์ธานี',
     locationEn: 'Chaiya, Surat Thani',
     region: 'south',
-    category: 'craft',
-    priceThbPerPerson: 980,
-    durationText: 'ครึ่งวัน (09:00 - 12:30 น.)',
+    category: 'food',
+    priceThbPerPerson: 780,
+    durationText: '4 ชั่วโมง (09:00 - 13:00 น.)',
     maxGroupSize: 20,
-    rating: 4.90,
-    reviewCount: 38,
-    coverImage: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80',
+    rating: 4.9,
+    reviewCount: 12,
+    coverImage: '/localconnect/lemed-chaiya-4.jpg',
     images: [
-      'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/lemed-chaiya-1.jpg',
+      '/localconnect/lemed-chaiya-2.jpg',
+      '/localconnect/lemed-chaiya-3.jpg',
+      '/localconnect/lemed-chaiya-4.jpg',
+      '/localconnect/lemed-chaiya-5.jpg',
+      '/localconnect/lemed-chaiya-6.jpg',
+      '/localconnect/lemed-chaiya-7.jpg',
+      '/localconnect/lemed-chaiya-8.jpg',
+      '/localconnect/lemed-chaiya-9.jpg'
     ],
-    descriptionTh: 'ลงมือทำไข่เค็มไชยาด้วยตนเอง ภูมิปัญญาพื้นบ้านเมืองไชยาที่มีชื่อเสียงยาวนาน เรียนรู้วิธีการผสมดินจอมปลวก เกลือ และพอกด้วยแกลบเผา พร้อมนำไข่เค็มฝีมือตนเองกลับบ้าน ชิมเมนูผัดไทยไข่เค็มและขนมเปี๊ยะไข่เค็มไชยา',
+    descriptionTh: 'ชวนออกเดินทางสัมผัสเสน่ห์ของไชยาผ่านเรื่องราวของ "ข้าวหอมไชยา" ข้าวสายพันธุ์พื้นเมืองที่สะท้อนภูมิปัญญาและวิถีเกษตรของชุมชน เรียนรู้การทำไข่เค็มสูตรดั้งเดิม ไข่แดงสีสวยที่เป็นส่วนหนึ่งของเรื่องราวในคำขวัญจังหวัดสุราษฎร์ธานี ก่อนอิ่มอร่อยกับอาหารพื้นบ้านรสชาติเรียบง่ายจากวัตถุดิบท้องถิ่น นั่งรถซาเล้งชมทุ่งนาเขียวขจี เก็บภาพความงดงามของชนบทไชยา และสัมผัสวิถีชีวิตที่ยังคงผูกพันกับผืนดินและอาหารอย่างใกล้ชิด',
     highlightsTh: [
-      'เวิร์กชอปพอกไข่เค็มไชยาด้วยดินจอมปลวกและแกลบเผา นำกลับบ้าน 1 กล่อง',
-      'ชิมไข่เค็มดาวทอดสดๆ นุ่มมัน ละมุนลิ้น',
-      'ทานผัดไทยไข่เค็มไชยาและขนมเปี๊ยะไส้ไข่เค็มลาวา',
-      'ชมสถาปัตยกรรมเมืองเก่าไชยาและพระบรมธาตุไชยา'
+      'เรียนรู้จากผืนนา — สัมผัสวิถีเกษตรและเรียนรู้เรื่องราวของ "ข้าวหอมไชยา" ข้าวพื้นเมืองอัตลักษณ์ของชุมชน',
+      'ไข่เค็มสูตรดั้งเดิม — ลงมือเรียนรู้ภูมิปัญญาการทำไข่เค็มไชยา ต้นกำเนิดความโดดเด่นของ "ไข่แดง" ที่ปรากฏในคำขวัญจังหวัดสุราษฎร์ธานี',
+      'อิ่มอร่อยแบบไชยา — ลิ้มรสอาหารพื้นบ้านจากวัตถุดิบท้องถิ่น รสชาติเรียบง่ายและอบอุ่น',
+      'ซาเล้งพาเที่ยวท้องนา — นั่งรถซาเล้งชมทุ่งนาเขียวขจี แวะเก็บภาพสวย ๆ และสัมผัสบรรยากาศชนบทอย่างใกล้ชิด'
     ],
     includedTh: [
-      'อุปกรณ์ทำไข่เค็มไชยาและกล่องไข่เค็มนำกลับบ้าน',
-      'อาหารกลางวันเมนูผัดไทยไข่เค็มและขนมเปี๊ยะ',
-      'วิทยากรป้าจินตนา ปราชญ์ไข่เค็มไชยา'
+      'กิจกรรมเรียนรู้ข้าวหอมไชยาและไข่เค็ม',
+      'รถซาเล้งนำชมทุ่งนาและชุมชน',
+      'อาหารว่างและอาหารกลางวันเมนูพื้นบ้าน',
+      'มัคคุเทศก์ท้องถิ่น'
     ],
     itinerary: [
-      { time: '09:00', titleTh: 'ต้อนรับด้วยน้ำส้มสด & ไข่ดาวเค็ม', descTh: 'ฟังประวัติไข่เค็มไชยาและเปรียบเทียบไข่เค็มแต่ละช่วงเวลา' },
-      { time: '09:45', titleTh: 'เวิร์กชอปพอกดินจอมปลวก', descTh: 'ผสมดิน เกลือ และพอกแกลบลงบนไข่เป็ดคัดสรร' },
-      { time: '11:15', titleTh: 'รับประทานผัดไทยไข่เค็ม', descTh: 'อิ่มอร่อยกับผัดไทยสูตรไชยาและขนมหวานไข่เค็ม' }
+      { time: '09:00', titleTh: 'ต้อนรับและนั่งรถซาเล้งชมทุ่งนา', descTh: 'นั่งรถซาเล้งชมทุ่งนาเขียวขจีและบรรยากาศชนบทไชยา' },
+      { time: '09:45', titleTh: 'เรียนรู้เรื่องข้าวหอมไชยา', descTh: 'สัมผัสวิถีเกษตรและเรียนรู้ข้าวพื้นเมืองอัตลักษณ์ของชุมชน' },
+      { time: '10:30', titleTh: 'เวิร์กชอปไข่เค็มสูตรดั้งเดิม', descTh: 'ลงมือเรียนรู้ภูมิปัญญาการทำไข่เค็มไชยา ต้นกำเนิด "ไข่แดง" เลื่องชื่อ' },
+      { time: '12:00', titleTh: 'อาหารกลางวันพื้นบ้านไชยา', descTh: 'อิ่มอร่อยกับอาหารพื้นบ้านรสชาติเรียบง่ายจากวัตถุดิบท้องถิ่น ก่อนเดินทางกลับ 13:00 น.' }
     ],
-    hostNameTh: 'ป้าจินตนา ไชยา',
-    hostRoleTh: 'ประธานวิสาหกิจไข่เค็มไชยา',
-    hostAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
+    hostNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด',
+    hostRoleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวเกษตรบ้านเลม็ด ไชยา',
+    hostAvatar: '/localconnect/lemed-chaiya-5.jpg',
     breakdownLevel1: {
-      communitySharePct: 76,
-      paymentGatewayPct: 3,
-      communityManagerPct: 5,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
+      communitySharePct: 81,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 15
     },
     distributionLevel2: {
       homestayPct: 0,
-      guideLeaderPct: 40,
-      localMealsPct: 35,
-      localTransportPct: 5,
-      communityFundPct: 20
+      guideLeaderPct: 23,
+      localMealsPct: 40,
+      localTransportPct: 32,
+      communityFundPct: 5,
+      handicraftPct: 0,
+      insurancePct: 0
     },
     impact: {
       jobsSupported: 5,
-      treesPlanted: 4,
-      localIncomeGeneratedThb: 744,
-      culturalPreservationItems: ['สืบสานภูมิปัญญาไข่เค็มไชยา', 'กองทุนแม่บ้านเกษตรกรไชยา']
+      treesPlanted: 0,
+      localIncomeGeneratedThb: 630,
+      culturalPreservationItems: ['สืบสานพันธุ์ข้าวหอมไชยาพื้นเมือง', 'อนุรักษ์ภูมิปัญญาไข่เค็มไชยาดั้งเดิม']
     },
-    isFeatured: false,
-    isB2BRecommended: true
+    isFeatured: true,
+    isB2BRecommended: false
   },
   {
-    id: 'surat-elephant-house',
-    titleTh: 'วิถีควาญช้างเชิงอนุรักษ์ ทำสมุนไพรป้อนช้าง พายเรือคายัค และทำภาชนะจากมูลช้าง',
-    titleEn: 'Surat Thani Elephant House Care & Kayaking Experience',
-    subtitleTh: 'สัมผัสความผูกพันคนกับช้าง ปรุงสมุนไพรป้อนช้าง พายคายัค และทำภาชนะมูลช้าง',
-    communityNameTh: 'สุราษฎร์ธานี เอเลเฟ่น เฮาส์',
-    communityNameEn: 'Surat Thani Elephant House CBT',
-    communityId: 'surat-elephant',
-    locationTh: 'อ.กาญจนดิษฐ์ จ.สุราษฎร์ธานี',
-    locationEn: 'Kanchanadit, Surat Thani',
+    id: 'koh-raet-homestay',
+    titleTh: 'เอนกายโฮมสเตย์ เฮฮาที่เกาะแรต',
+    titleEn: 'Koh Raet Homestay Retreat: Rest, Reconnect & Fisherman Life',
+    subtitleTh: 'พักง่าย ๆ ใช้เวลาร่วมกัน และสัมผัสวิถีชาวประมง',
+    communityNameTh: 'วิสาหกิจชุมชนโฮมสเตย์เกาะแรต',
+    communityNameEn: 'Koh Raet Homestay CBT Community',
+    communityId: 'koh-raet',
+    locationTh: 'เกาะแรต อ่าวบ้านดอน จ.สุราษฎร์ธานี',
+    locationEn: 'Koh Raet, Ban Don Bay, Surat Thani',
     region: 'south',
-    category: 'nature',
-    priceThbPerPerson: 1850,
-    durationText: '1 วัน (09:00 - 15:30 น.)',
-    maxGroupSize: 15,
-    rating: 4.97,
-    reviewCount: 46,
-    coverImage: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=80',
+    category: 'csr',
+    priceThbPerPerson: 2300,
+    durationText: '2 วัน 1 คืน',
+    maxGroupSize: 40,
+    rating: 4.8,
+    reviewCount: 6,
+    coverImage: '/localconnect/koh-raet-1.jpg',
     images: [
-      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/koh-raet-1.jpg',
+      '/localconnect/koh-raet-8.jpg',
+      '/localconnect/koh-raet-2.jpg',
+      '/localconnect/koh-raet-3.jpg',
+      '/localconnect/koh-raet-4.jpg',
+      '/localconnect/koh-raet-5.jpg',
+      '/localconnect/koh-raet-6.jpg',
+      '/localconnect/koh-raet-7.jpg'
     ],
-    descriptionTh: 'สัมผัสประสบการณ์ท่องเที่ยวอนุรักษ์ช้างอย่างแท้จริง ไร้การขี่ช้าง เรียนรู้วิถีควาญช้างปักษ์ใต้ ร่วมปั้นก้อนสมุนไพรสุขภาพป้อนช้าง สัมผัสความน่ารัก อ่อนโยน เดินเล่นกับช้างในธรรมชาติ พายเรือคายัคริมน้ำ และทำกระดาษผาชนะจากมูลช้าง',
+    descriptionTh: 'ชวนวางความเร่งรีบ แล้วเอนกายพักใจในบรรยากาศเรียบง่ายของเกาะแรต สัมผัสวิถีชีวิตชาวประมงอย่างใกล้ชิด พักในโฮมสเตย์สะอาดและอบอุ่น พร้อมต้อนรับด้วยอาหารทะเลสดใหม่จากท้องถิ่น เติมสีสันด้วยกิจกรรมชมโลมาสีชมพู และใช้เวลาร่วมกันอย่างเป็นกันเอง เหมาะสำหรับกลุ่มเล็ก ครอบครัว เพื่อน หรือองค์กรที่ต้องการจัดประชุมและกิจกรรมพัฒนาทีมในบรรยากาศผ่อนคลาย คุ้มค่า และเข้าถึงง่าย พร้อมเชื่อมต่อการเดินทางสู่เกาะสมุยได้อย่างสะดวก',
     highlightsTh: [
-      'ปรุงอาหารสมุนไพรและปั้นก้อนวิตามินป้อนช้างอย่างอบอุ่น',
-      'พาช้างเดินเล่นในธรรมชาติและอาบน้ำช้างริมลำธาร',
-      'พายเรือคายัคชมธรรมชาติสายน้ำกาญจนดิษฐ์',
-      'เวิร์กชอปทำกระดาษและภาชนะรักษ์โลกจากมูลช้าง'
+      'ช้าลงกับวิถีชาวประมง — พักผ่อนอย่างสบาย ๆ และสัมผัสจังหวะชีวิตเรียบง่ายของชุมชนเกาะแรต',
+      'พักอบอุ่นเหมือนบ้าน — โฮมสเตย์สะอาด เจ้าบ้านเป็นมิตร และดูแลอย่างเป็นกันเอง',
+      'สดจากทะเลถึงสำรับ — ลิ้มรสอาหารทะเลสดใหม่จากวัตถุดิบท้องถิ่น',
+      'ออกไปพบโลมาสีชมพู — เติมประสบการณ์การเดินทางด้วยกิจกรรมชมโลมาสีชมพูในอ่าวบ้านดอน',
+      'พบกัน พักผ่อน และเติบโตไปด้วยกัน — พื้นที่สำหรับการประชุมและกิจกรรมพัฒนาทีมขนาดเล็ก ในบรรยากาศสบาย ๆ และงบประมาณที่เข้าถึงได้',
+      'เดินทางง่าย เชื่อมต่อสมุย — ใกล้ท่าเรือเฟอร์รี่ สะดวกต่อการเดินทางต่อไปยังเกาะสมุย'
     ],
     includedTh: [
-      'ก้อนสมุนไพรและอาหารช้างตลอดกิจกรรม',
-      'อุปกรณ์พายเรือคายัคและเสื้อชูชีพ',
-      'อาหารกลางวันปักษ์ใต้ท้องถิ่น 1 มื้อ',
-      'ทีมควาญช้างและวิทยากรดูแลความปลอดภัย'
+      'บริการห้องประชุม',
+      'กิจกรรม CSR',
+      'โฮมสเตย์ 1 คืน รวมอาหาร 2 มื้อ',
+      'อาหารระหว่างกิจกรรมประชุม/พัฒนาทีม 2 มื้อ',
+      'ยุวมัคคุเทศก์',
+      'กิจกรรมชมโลมาสีชมพู'
     ],
     itinerary: [
-      { time: '09:00', titleTh: 'ต้อนรับสู่สุราษฎร์ธานี เอเลเฟ่น เฮาส์', descTh: 'ฟังเรื่องราวประวัติความเป็นมาของช้างและการอนุรักษ์' },
-      { time: '10:00', titleTh: 'ปรุงอาหารสมุนไพร & ป้อนช้าง', descTh: 'หั่นผลไม้ ปั้นก้อนสมุนไพร และป้อนช้างอย่างใกล้ชิด' },
-      { time: '12:00', titleTh: 'รับประทานอาหารกลางวัน', descTh: 'อร่อยกับอาหารพื้นบ้านปักษ์ใต้ในบรรยากาศร่มรื่น' },
-      { time: '13:30', titleTh: 'พายคายัค & ทำกระดาษมูลช้าง', descTh: 'พายคายัคในลำน้ำ และทำผลิตภัณฑ์กระดาษคราฟต์จากมูลช้าง' }
+      { time: 'วันที่ 1 · 09:00', titleTh: 'เดินทางถึงเกาะแรต เช็คอินโฮมสเตย์', descTh: 'ต้อนรับและพักผ่อนในโฮมสเตย์สะอาดอบอุ่น สัมผัสวิถีชาวประมงอย่างใกล้ชิด' },
+      { time: 'วันที่ 1 · 12:00', titleTh: 'อาหารทะเลสดใหม่มื้อกลางวัน', descTh: 'ลิ้มรสอาหารทะเลสดใหม่จากวัตถุดิบท้องถิ่น' },
+      { time: 'วันที่ 1 · 14:00', titleTh: 'กิจกรรมประชุมและพัฒนาทีม', descTh: 'ร่วมกิจกรรม CSR และพัฒนาทีมขนาดเล็กในบรรยากาศผ่อนคลาย' },
+      { time: 'วันที่ 2 · 08:00', titleTh: 'ล่องเรือชมโลมาสีชมพู', descTh: 'ออกเรือชมโลมาสีชมพูในอ่าวบ้านดอน เติมสีสันให้ทริป' },
+      { time: 'วันที่ 2 · 11:00', titleTh: 'อำลาเกาะแรต เดินทางกลับ', descTh: 'เดินทางกลับหรือเชื่อมต่อสู่เกาะสมุยได้อย่างสะดวก' }
     ],
-    hostNameTh: 'พี่สุเทพ ควาญช้างสุราษฎร์',
-    hostRoleTh: 'ผู้นำศูนย์อนุรักษ์สุราษฎร์ธานี เอเลเฟ่น เฮาส์',
-    hostAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    hostNameTh: 'กลุ่มโฮมสเตย์ชุมชนเกาะแรต',
+    hostRoleTh: 'ประธานวิสาหกิจชุมชนโฮมสเตย์เกาะแรต',
+    hostAvatar: '/localconnect/koh-raet-4.jpg',
     breakdownLevel1: {
-      communitySharePct: 80,
-      paymentGatewayPct: 3,
+      communitySharePct: 83,
+      paymentGatewayPct: 2,
       communityManagerPct: 2,
-      insuranceSupportPct: 2,
+      insuranceSupportPct: 0,
       platformDevOpsPct: 13
     },
     distributionLevel2: {
-      homestayPct: 0,
-      guideLeaderPct: 40,
-      localMealsPct: 25,
-      localTransportPct: 10,
-      communityFundPct: 25
-    },
-    impact: {
-      jobsSupported: 8,
-      treesPlanted: 15,
-      localIncomeGeneratedThb: 1480,
-      culturalPreservationItems: ['กองทุนสวัสดิการอาหารและการแพทย์ช้าง', 'สืบสานวิถีควาญช้างปักษ์ใต้']
-    },
-    isFeatured: true,
-    isB2BRecommended: true
-  },
-  {
-    id: 'koh-phaluai-green-island',
-    titleTh: 'เกาะพะลวย กรีนไอส์แลนด์: เรียนรู้พลังงานสะอาด เก็บขยะชายหาด ปลูกป่าชายเลน และตามหานกเงือก',
-    titleEn: 'Koh Phaluai Green Island: Clean Energy, Beach Cleanup & Hornbill Trekking',
-    subtitleTh: 'สัมผัสเกาะเล็กกลางอ่าวไทยที่ขับเคลื่อนด้วยพลังงานสะอาด ร่วม CSR ปลูกป่าชายเลนและตามหานกเงือก',
-    communityNameTh: 'ชุมชนท่องเที่ยวเกาะพะลวย',
-    communityNameEn: 'Koh Phaluai Green Island CBT Community',
-    communityId: 'koh-phaluai',
-    locationTh: 'บ้านเกาะพะลวย ต.อ่างทอง อ.เกาะสมุย จ.สุราษฎร์ธานี',
-    locationEn: 'Koh Samui, Surat Thani',
-    region: 'south',
-    category: 'nature',
-    priceThbPerPerson: 1200,
-    durationText: '1 วัน (09:00 - 16:00 น.)',
-    maxGroupSize: 30,
-    rating: 4.93,
-    reviewCount: 21,
-    coverImage: '/tceb/koh-phaluai-hornbill.jpg',
-    images: [
-      '/tceb/koh-phaluai-hornbill.jpg',
-      '/tceb/koh-phaluai-beach-cleanup.jpg'
-    ],
-    descriptionTh: 'เดินทางสู่เกาะพะลวย กรีนไอส์แลนด์ เกาะเล็กกลางอ่าวไทยที่ขับเคลื่อนด้วยพลังงานสะอาด เรียนรู้ระบบพลังงานหมุนเวียนของชุมชน ร่วมกิจกรรม CSR เก็บขยะบนชายหาดและปลูกป่าชายเลนเพื่อฟื้นฟูระบบนิเวศ เดินป่า เข้าถ้ำ และตามหานกเงือกที่ยังคงอาศัยอยู่บนเกาะ',
-    highlightsTh: [
-      'เรียนรู้เรื่องพลังงานสะอาดของชุมชนเกาะพะลวย',
-      'กิจกรรม CSR เก็บขยะบนชายหาดและปลูกป่าชายเลน',
-      'เดินป่า เข้าถ้ำ สัมผัสธรรมชาติเกาะเล็กกลางอ่าวไทย',
-      'ตามหานกเงือกในถิ่นอาศัยธรรมชาติบนเกาะ'
-    ],
-    includedTh: [
-      'เรือนำเที่ยวและอุปกรณ์เดินป่า',
-      'ต้นกล้าไม้ชายเลนและอุปกรณ์เก็บขยะ CSR',
-      'อาหารกลางวันท้องถิ่นเกาะพะลวย 1 มื้อ',
-      'ไกด์ท้องถิ่นชุมชนเกาะพะลวย'
-    ],
-    itinerary: [
-      { time: '09:00', titleTh: 'เรียนรู้ระบบพลังงานสะอาด', descTh: 'ฟังบรรยายเรื่องพลังงานหมุนเวียนที่ขับเคลื่อนเกาะพะลวย' },
-      { time: '10:30', titleTh: 'กิจกรรม CSR เก็บขยะชายหาด', descTh: 'ร่วมเก็บขยะบนชายหาดและปลูกป่าชายเลนฟื้นฟูระบบนิเวศ' },
-      { time: '12:30', titleTh: 'อาหารกลางวันท้องถิ่น', descTh: 'รับประทานอาหารพื้นบ้านเกาะพะลวยริมทะเล' },
-      { time: '13:30', titleTh: 'เดินป่าตามหานกเงือก', descTh: 'เดินป่า เข้าถ้ำ และตามหานกเงือกบนเกาะ' }
-    ],
-    hostNameTh: 'ทีมชุมชนเกาะพะลวย กรีนไอส์แลนด์',
-    hostRoleTh: 'ประธานชุมชนท่องเที่ยวเกาะพะลวย',
-    hostAvatar: '/tceb/koh-phaluai-beach-cleanup.jpg',
-    breakdownLevel1: {
-      communitySharePct: 78,
-      paymentGatewayPct: 3,
-      communityManagerPct: 3,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
-    },
-    distributionLevel2: {
-      homestayPct: 0,
-      guideLeaderPct: 40,
-      localMealsPct: 25,
-      localTransportPct: 15,
-      communityFundPct: 20
-    },
-    impact: {
-      jobsSupported: 6,
-      treesPlanted: 30,
-      localIncomeGeneratedThb: 936,
-      culturalPreservationItems: ['กองทุนพลังงานสะอาดเกาะพะลวย', 'กองทุนอนุรักษ์นกเงือกและป่าชายเลน']
-    },
-    isFeatured: true,
-    isB2BRecommended: true
-  },
-  {
-    id: 'sala-athit-garden-tour',
-    titleTh: 'สวนสละอาทิตย์: เรียนรู้การจัดการดิน กระบวนการผลิตสละ และทีมบิวดิ้งในสวน',
-    titleEn: 'Sala Athit Salak Fruit Garden: Soil Management & Team Building',
-    subtitleTh: 'เดินชมสวนสละอาทิตย์ เรียนรู้กระบวนการปลูกสละ ชิมผลสดจากต้น และร่วมทีมบิวดิ้ง',
-    communityNameTh: 'สวนสละอาทิตย์',
-    communityNameEn: 'Sala Athit Salak Fruit Garden',
-    communityId: 'sala-athit-garden',
-    locationTh: 'ต.คลองปราบ อ.บ้านนาสาร จ.สุราษฎร์ธานี',
-    locationEn: 'Ban Na San, Surat Thani',
-    region: 'south',
-    category: 'nature',
-    priceThbPerPerson: 900,
-    durationText: 'ครึ่งวัน (09:00 - 13:00 น.)',
-    maxGroupSize: 50,
-    rating: 4.88,
-    reviewCount: 15,
-    coverImage: '/tceb/sala-athit-picking.jpg',
-    images: [
-      '/tceb/sala-athit-picking.jpg',
-      '/tceb/sala-athit-peeling.jpg'
-    ],
-    descriptionTh: 'เดินชมสวนสละอาทิตย์ท่ามกลางบรรยากาศร่มรื่น เรียนรู้การจัดการดินและกระบวนการปลูกสละตั้งแต่ต้นจนถึงผลผลิต ชิมสละอาทิตย์สดจากต้นรสหวานฉ่ำ และร่วมกิจกรรมทีมบิวดิ้งในสวนที่เหมาะกับกลุ่มองค์กร',
-    highlightsTh: [
-      'เรียนรู้การจัดการดินและกระบวนการผลิตสละอาทิตย์',
-      'ชิมสละอาทิตย์สดจากต้นรสหวานฉ่ำ',
-      'จัดกิจกรรมทีมบิวดิ้งในสวนสละ'
-    ],
-    includedTh: [
-      'ไกด์นำชมสวนสละอาทิตย์',
-      'ผลสละอาทิตย์สดชิมในสวน',
-      'อุปกรณ์กิจกรรมทีมบิวดิ้ง',
-      'เครื่องดื่มต้อนรับ'
-    ],
-    itinerary: [
-      { time: '09:00', titleTh: 'ต้อนรับและเรียนรู้การจัดการดิน', descTh: 'ฟังบรรยายการเตรียมดินและปลูกสละอาทิตย์' },
-      { time: '10:00', titleTh: 'เดินชมสวนและเก็บสละ', descTh: 'เดินชมกระบวนการผลิตสละตั้งแต่ต้นจนถึงผลผลิต' },
-      { time: '11:30', titleTh: 'ชิมสละอาทิตย์สดจากต้น', descTh: 'ลิ้มรสสละอาทิตย์รสหวานฉ่ำพร้อมเรียนรู้การปอกเปลือก' },
-      { time: '12:00', titleTh: 'กิจกรรมทีมบิวดิ้งในสวน', descTh: 'ร่วมกิจกรรมสร้างความสัมพันธ์ทีมท่ามกลางบรรยากาศสวนสละ' }
-    ],
-    hostNameTh: 'เจ้าของสวนสละอาทิตย์',
-    hostRoleTh: 'ประธานสวนสละอาทิตย์',
-    hostAvatar: '/tceb/sala-athit-peeling.jpg',
-    breakdownLevel1: {
-      communitySharePct: 78,
-      paymentGatewayPct: 3,
-      communityManagerPct: 3,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
-    },
-    distributionLevel2: {
-      homestayPct: 0,
-      guideLeaderPct: 45,
-      localMealsPct: 20,
-      localTransportPct: 5,
-      communityFundPct: 30
-    },
-    impact: {
-      jobsSupported: 4,
-      treesPlanted: 6,
-      localIncomeGeneratedThb: 702,
-      culturalPreservationItems: ['กองทุนพัฒนาพันธุ์สละอาทิตย์', 'ทุนส่งเสริมเกษตรกรรุ่นใหม่บ้านนาสาร']
-    },
-    isFeatured: false,
-    isB2BRecommended: true
-  },
-  {
-    id: 'tai-dam-wisdom-experience',
-    titleTh: 'ศูนย์เรียนรู้ภูมิปัญญาไทดำ: ชมการแสดงเยาวชน แต่งกายชุดไทดำ และล่องเรือแม่น้ำตาปี',
-    titleEn: 'Tai Dam Wisdom Learning Center: Youth Dance, Costume & Tapi River Boat Tour',
-    subtitleTh: 'เรียนรู้ภูมิปัญญาไทดำ ชมการแสดงเยาวชน แต่งกายชุดไทดำ และล่องเรือชมชุมชนริมแม่น้ำตาปี',
-    communityNameTh: 'ศูนย์เรียนรู้ภูมิปัญญาไทดำ',
-    communityNameEn: 'Tai Dam Wisdom Learning Center',
-    communityId: 'tai-dam-learning-center',
-    locationTh: 'วัดดอนมะลิ ต.ท่าข้าม อ.พุนพิน จ.สุราษฎร์ธานี',
-    locationEn: 'Phunphin, Surat Thani',
-    region: 'south',
-    category: 'culture',
-    priceThbPerPerson: 900,
-    durationText: 'ครึ่งวัน (09:00 - 13:00 น.)',
-    maxGroupSize: 50,
-    rating: 4.91,
-    reviewCount: 18,
-    coverImage: '/tceb/tai-dam-dance.jpg',
-    images: [
-      '/tceb/tai-dam-dance.jpg',
-      '/tceb/tai-dam-textile-craft.jpg'
-    ],
-    descriptionTh: 'เรียนรู้ภูมิปัญญาชาวไทดำ ชมการแสดงพื้นบ้านโดยกลุ่มเยาวชนที่ร่วมกันสืบสานวัฒนธรรม ทดลองแต่งกายชุดไทดำนุ่งผ้าซิ่นลายแตงโม ลิ้มรสอาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน ปิดท้ายด้วยการล่องเรือชมวิถีชุมชนริมแม่น้ำตาปี',
-    highlightsTh: [
-      'ชมการแสดงไทดำโดยกลุ่มเยาวชนสืบสานวัฒนธรรม',
-      'ทดลองแต่งกายชุดไทดำ นุ่งผ้าซิ่นลายแตงโม',
-      'ล่องเรือชมวิถีชุมชนริมแม่น้ำตาปี',
-      'ชิมอาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน'
-    ],
-    includedTh: [
-      'ชุดไทดำสำหรับถ่ายภาพ',
-      'อาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน',
-      'ค่าเรือล่องแม่น้ำตาปี',
-      'ไกด์ชุมชนและการแสดงเยาวชนไทดำ'
-    ],
-    itinerary: [
-      { time: '09:00', titleTh: 'เรียนรู้ภูมิปัญญาไทดำ', descTh: 'ฟังเรื่องราวประวัติศาสตร์และวัฒนธรรมชาวไทดำท่าข้าม' },
-      { time: '09:45', titleTh: 'ชมการแสดงเยาวชนไทดำ', descTh: 'ชมการแสดงพื้นบ้านและทดลองแต่งกายชุดไทดำลายแตงโม' },
-      { time: '11:00', titleTh: 'ตลาดพื้นบ้านไทดำ', descTh: 'ลิ้มรสอาหารไทดำและอาหารใต้ในตลาดพื้นบ้าน' },
-      { time: '12:00', titleTh: 'ล่องเรือแม่น้ำตาปี', descTh: 'ล่องเรือชมวิถีชุมชนริมแม่น้ำตาปี' }
-    ],
-    hostNameTh: 'กลุ่มเยาวชนไทดำท่าข้าม',
-    hostRoleTh: 'ประธานศูนย์เรียนรู้ภูมิปัญญาไทดำ',
-    hostAvatar: '/tceb/tai-dam-textile-craft.jpg',
-    breakdownLevel1: {
-      communitySharePct: 78,
-      paymentGatewayPct: 3,
-      communityManagerPct: 3,
-      insuranceSupportPct: 2,
-      platformDevOpsPct: 14
-    },
-    distributionLevel2: {
-      homestayPct: 0,
-      guideLeaderPct: 45,
-      localMealsPct: 25,
-      localTransportPct: 10,
-      communityFundPct: 20
+      homestayPct: 66,
+      guideLeaderPct: 5,
+      localMealsPct: 26,
+      localTransportPct: 0,
+      communityFundPct: 3,
+      handicraftPct: 0,
+      insurancePct: 0
     },
     impact: {
       jobsSupported: 10,
       treesPlanted: 0,
-      localIncomeGeneratedThb: 702,
-      culturalPreservationItems: ['กองทุนสืบสานวัฒนธรรมไทดำ', 'ทุนกลุ่มเยาวชนนาฏศิลป์ไทดำ']
+      localIncomeGeneratedThb: 1900,
+      culturalPreservationItems: ['สืบสานวิถีชาวประมงเกาะแรต', 'อนุรักษ์แหล่งที่อยู่โลมาสีชมพูอ่าวบ้านดอน']
+    },
+    isFeatured: true,
+    isB2BRecommended: true
+  },
+  {
+    id: 'thatong-oyster-sunset',
+    titleTh: 'กินหอย คอยตะวัน',
+    titleEn: 'Tha Thong: Oysters & Sunset — A Low-Carbon Canal Journey',
+    subtitleTh: 'เส้นทางท่องเที่ยวคาร์บอนต่ำ ล่องคลองท่าทอง ชมตะวันลับฟ้าริมอ่าวบ้านดอน',
+    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    communityNameEn: 'Tha Thong CBT Community',
+    communityId: 'thatong',
+    locationTh: 'ต.ท่าทอง อ.เมือง จ.สุราษฎร์ธานี',
+    locationEn: 'Mueang, Surat Thani',
+    region: 'south',
+    category: 'food',
+    priceThbPerPerson: 800,
+    durationText: '4 ชั่วโมง (14:00 - 18:00 น.)',
+    maxGroupSize: 10,
+    rating: 4.8,
+    reviewCount: 7,
+    coverImage: '/localconnect/thatong-1.jpg',
+    images: [
+      '/localconnect/thatong-1.jpg',
+      '/localconnect/thatong-2.jpg',
+      '/localconnect/thatong-3.jpg',
+      '/localconnect/thatong-4.jpg',
+      '/localconnect/thatong-5.jpg',
+      '/localconnect/thatong-6.jpg',
+      '/localconnect/thatong-7.jpg',
+      '/localconnect/thatong-8.jpg'
+    ],
+    descriptionTh: 'ชวนคุณใช้เวลาสบาย ๆ ริมอ่าวบ้านดอน เริ่มต้นด้วยการลิ้มรสหอยนางรมสด ๆ จากฟาร์ม เรียนรู้เสน่ห์ของวิถีประมงชายฝั่ง ก่อนออกเรือล่องคลองท่าทอง ชมธรรมชาติและบรรยากาศอันงดงามของอ่าวบ้านดอน ปิดท้ายวันด้วยช่วงเวลาพิเศษริมอ่าว เฝ้าชมแสงสุดท้ายของวันค่อย ๆ ลับขอบฟ้า เป็นประสบการณ์เรียบง่ายที่รวมรสชาติของทะเล สายน้ำ และความงดงามของพระอาทิตย์ตกไว้ในวันเดียว',
+    highlightsTh: [
+      'สดจากฟาร์ม ถึงคำแรก — ลิ้มรสหอยนางรมสด ๆ จากฟาร์ม สัมผัสรสชาติของทะเลอ่าวบ้านดอน',
+      'ล่องคลองท่าทอง — นั่งเรือชมวิถีริมคลองและธรรมชาติอันงดงามของอ่าวบ้านดอน',
+      'คอยตะวันริมอ่าว — ปล่อยเวลาให้ช้าลง ดื่มด่ำกับแสงสุดท้ายและพระอาทิตย์ตกเหนืออ่าวบ้านดอน',
+      'เส้นทางท่องเที่ยวคาร์บอนต่ำ — อิ่มอร่อยกับเมนูอาหารทะเลคาร์บอนต่ำ ล่องเรือพลังงานแสงแดด'
+    ],
+    includedTh: [
+      'เรือหางยาวพลังงานแสงอาทิตย์',
+      'อาหารกลางวันและอาหารว่าง',
+      'มัคคุเทศก์ท้องถิ่น'
+    ],
+    itinerary: [
+      { time: '14:00', titleTh: 'ลิ้มรสหอยนางรมสดจากฟาร์ม', descTh: 'สัมผัสรสชาติทะเลอ่าวบ้านดอนก่อนออกเดินทาง' },
+      { time: '15:00', titleTh: 'ล่องเรือพลังงานแสงอาทิตย์ชมคลองท่าทอง', descTh: 'นั่งเรือชมวิถีริมคลองและธรรมชาติอันงดงาม' },
+      { time: '17:00', titleTh: 'คอยตะวันริมอ่าวบ้านดอน', descTh: 'ดื่มด่ำกับแสงสุดท้ายและพระอาทิตย์ตกก่อนเดินทางกลับ 18:00 น.' }
+    ],
+    hostNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    hostRoleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวท่าทอง',
+    hostAvatar: '/localconnect/thatong-1.jpg',
+    breakdownLevel1: {
+      communitySharePct: 80,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 16
+    },
+    distributionLevel2: {
+      homestayPct: 0,
+      guideLeaderPct: 16,
+      localMealsPct: 46,
+      localTransportPct: 16,
+      communityFundPct: 22,
+      handicraftPct: 0,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 4,
+      treesPlanted: 0,
+      localIncomeGeneratedThb: 640,
+      culturalPreservationItems: ['สืบสานวิถีประมงชายฝั่งท่าทอง', 'ส่งเสริมเส้นทางท่องเที่ยวคาร์บอนต่ำ']
+    },
+    isFeatured: true,
+    isB2BRecommended: false
+  },
+  {
+    id: 'prasit-panya-batik',
+    titleTh: 'ศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    titleEn: 'Prasit Panya Learning Center: Nipa Palm Wisdom for the Next Generation',
+    subtitleTh: 'จากภูมิปัญญาท้องถิ่น สู่โอกาสทางการศึกษาสำหรับเยาวชนในชุมชน',
+    communityNameTh: 'ศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    communityNameEn: 'Prasit Panya Learning Center',
+    communityId: 'wat-prasit',
+    locationTh: 'อ.เมือง จ.สุราษฎร์ธานี',
+    locationEn: 'Mueang, Surat Thani',
+    region: 'south',
+    category: 'craft',
+    priceThbPerPerson: 925,
+    durationText: '5 ชั่วโมง (10:00 - 15:00 น.)',
+    maxGroupSize: 20,
+    rating: 4.85,
+    reviewCount: 9,
+    coverImage: '/localconnect/prasitpanya-1.jpg',
+    images: [
+      '/localconnect/prasitpanya-1.jpg',
+      '/localconnect/prasitpanya-4.jpg',
+      '/localconnect/prasitpanya-2.jpg',
+      '/localconnect/prasitpanya-3.jpg',
+      '/localconnect/prasitpanya-5.jpg',
+      '/localconnect/prasitpanya-6.jpg',
+      '/localconnect/prasitpanya-7.jpg'
+    ],
+    descriptionTh: 'เปิดประสบการณ์เรียนรู้ภูมิปัญญาจาก "ต้นจาก" ผ่านกิจกรรมที่ชวนลงมือทำ ตั้งแต่การสร้างสรรค์ผ้ามัดย้อมจากสีธรรมชาติของเปลือกลูกจาก การทำขนมไทยจากใบและลูกจาก ไปจนถึงการลิ้มรสอาหารพื้นบ้านที่นำวัตถุดิบจากต้นจากมารังสรรค์เป็นเมนูท้องถิ่น พร้อมสัมผัสเรื่องราวของชุมชนที่เปลี่ยนภูมิปัญญาให้เป็นโอกาส เพราะส่วนหนึ่งของรายได้จากกิจกรรมถูกนำไปสนับสนุนการเรียนรู้และสร้างโอกาสในการหารายได้ให้แก่นักเรียนด้อยโอกาสและนักเรียนกลุ่มเปราะบาง เป็นประสบการณ์ที่ได้ทั้งความรู้ ความอร่อย และการส่งต่อโอกาสให้คนรุ่นใหม่',
+    highlightsTh: [
+      'เรียนรู้ภูมิปัญญาจากต้นจาก — สัมผัสคุณค่าของต้นจากผ่านกิจกรรมสร้างสรรค์ที่ลงมือทำด้วยตัวเอง',
+      'สีสันจากธรรมชาติ — สร้างผ้ามัดย้อมจากสีธรรมชาติของเปลือกลูกจาก เรียนรู้เสน่ห์ของสีที่เกิดจากภูมิปัญญาท้องถิ่น',
+      'หวานหอมจากใบและลูกจาก — ลงมือทำขนมไทย เรียนรู้การใช้วัตถุดิบท้องถิ่นอย่างสร้างสรรค์',
+      'อิ่มอร่อยกับสำรับจากต้นจาก — ลิ้มรสอาหารพื้นบ้านที่นำวัตถุดิบจากต้นจากมาสร้างสรรค์เป็นเมนูท้องถิ่น',
+      'เที่ยวแล้วส่งต่อโอกาส — รายได้ส่วนหนึ่งจากกิจกรรมสนับสนุนการเรียนรู้และสร้างโอกาสในการหารายได้ให้แก่นักเรียนด้อยโอกาสและนักเรียนกลุ่มเปราะบาง',
+      'ใกล้เมือง เดินทางสะดวก — เติมเต็มประสบการณ์ชุมชนได้ง่าย โดยไม่ต้องเดินทางไกลจากตัวเมือง'
+    ],
+    includedTh: [
+      'กิจกรรมทำผ้ามัดย้อมจากสีเปลือกลูกจาก',
+      'ของที่ระลึกผ้ามัดย้อม 1 ชิ้น',
+      'กิจกรรมขนมไทยจากใบ-ลูกจาก',
+      'อาหารกลางวันเมนูพื้นบ้านจากต้นจาก'
+    ],
+    itinerary: [
+      { time: '10:00', titleTh: 'เรียนรู้ภูมิปัญญาจากต้นจาก', descTh: 'สัมผัสคุณค่าของต้นจากผ่านกิจกรรมสร้างสรรค์' },
+      { time: '11:00', titleTh: 'ทำผ้ามัดย้อมจากสีเปลือกลูกจาก', descTh: 'สร้างผ้ามัดย้อมด้วยสีธรรมชาติ นำกลับบ้าน 1 ชิ้น' },
+      { time: '13:00', titleTh: 'อาหารกลางวันสำรับจากต้นจาก', descTh: 'ลิ้มรสอาหารพื้นบ้านจากวัตถุดิบต้นจาก' },
+      { time: '14:00', titleTh: 'ทำขนมไทยจากใบและลูกจาก', descTh: 'ลงมือทำขนมไทยก่อนเดินทางกลับ 15:00 น.' }
+    ],
+    hostNameTh: 'กลุ่มศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    hostRoleTh: 'ประธานศูนย์การเรียนรู้ประสิทธิ์ปัญญา',
+    hostAvatar: '/localconnect/prasitpanya-1.jpg',
+    breakdownLevel1: {
+      communitySharePct: 80,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 16
+    },
+    distributionLevel2: {
+      homestayPct: 0,
+      guideLeaderPct: 30,
+      localMealsPct: 34,
+      localTransportPct: 0,
+      communityFundPct: 3,
+      handicraftPct: 33,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 6,
+      treesPlanted: 0,
+      localIncomeGeneratedThb: 740,
+      culturalPreservationItems: ['สนับสนุนทุนการศึกษานักเรียนด้อยโอกาส', 'สืบสานภูมิปัญญาต้นจาก']
+    },
+    isFeatured: true,
+    isB2BRecommended: true
+  },
+  {
+    id: 'don-han-mangrove',
+    titleTh: 'Amazon ดอนหาร',
+    titleEn: 'Amazon Don Han: Mangrove Wonders on a Low-Carbon Trail',
+    subtitleTh: 'มหัศจรรย์ป่าโกงกาง บนเส้นทางคาร์บอนต่ำ',
+    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยว Amazon ดอนหาร',
+    communityNameEn: 'Amazon Don Han CBT Community',
+    communityId: 'don-han',
+    locationTh: 'ต.ดอนหาร อ.เมือง จ.สุราษฎร์ธานี',
+    locationEn: 'Mueang, Surat Thani',
+    region: 'south',
+    category: 'nature',
+    priceThbPerPerson: 840,
+    durationText: '4 ชั่วโมง (10:00 - 14:00 น.)',
+    maxGroupSize: 10,
+    rating: 4.87,
+    reviewCount: 5,
+    coverImage: '/localconnect/donhan-3.jpg',
+    images: [
+      '/localconnect/donhan-2.jpg',
+      '/localconnect/donhan-1.jpg',
+      '/localconnect/donhan-3.jpg',
+      '/localconnect/donhan-4.jpg',
+      '/localconnect/donhan-5.jpg',
+      '/localconnect/donhan-6.jpg',
+      '/localconnect/donhan-7.jpg',
+      '/localconnect/donhan-8.jpg',
+      '/localconnect/donhan-9.jpg',
+      '/localconnect/donhan-10.jpg',
+      '/localconnect/donhan-11.jpg',
+      '/localconnect/donhan-12.jpg'
+    ],
+    descriptionTh: 'ออกเดินทางสู่ "Amazon ดอนหาร" สัมผัสความมหัศจรรย์ของผืนป่าโกงกางที่อุดมสมบูรณ์ ผ่านเส้นทางท่องเที่ยวคาร์บอนต่ำที่ชวนให้คุณใกล้ชิดธรรมชาติอย่างเรียบง่าย เรียนรู้ความสำคัญของระบบนิเวศชายฝั่งและปล่อยใจไปกับความสงบของสายน้ำและผืนป่า เป็นประสบการณ์ท่องเที่ยวที่ได้ทั้งความสดชื่น ความรู้ และความประทับใจจากธรรมชาติ',
+    highlightsTh: [
+      'มหัศจรรย์ป่าโกงกาง — สัมผัสความงดงามและความอุดมสมบูรณ์ของระบบนิเวศป่าโกงกางดอนหาร',
+      'เที่ยวเบา ๆ ให้โลกเบาลง — ออกเดินทางบนเส้นทางท่องเที่ยวคาร์บอนต่ำ ใกล้ชิดธรรมชาติอย่างใส่ใจ',
+      'ใกล้ชิดธรรมชาติในทุกจังหวะ — ปล่อยใจไปกับสายน้ำ ผืนป่า และบรรยากาศสงบ ๆ ของดอนหาร'
+    ],
+    includedTh: [
+      'เรือหางยาวพลังงานแสงอาทิตย์',
+      'อาหารว่างและอาหารกลางวันเมนูพื้นบ้านและคาร์บอนต่ำ',
+      'มัคคุเทศก์ท้องถิ่น'
+    ],
+    itinerary: [
+      { time: '10:00', titleTh: 'ล่องเรือพลังงานแสงอาทิตย์สู่ Amazon ดอนหาร', descTh: 'ออกเดินทางชมความมหัศจรรย์ของผืนป่าโกงกาง' },
+      { time: '11:30', titleTh: 'เรียนรู้ระบบนิเวศชายฝั่ง', descTh: 'สัมผัสความสงบของสายน้ำและผืนป่าโกงกางอย่างใกล้ชิด' },
+      { time: '12:30', titleTh: 'อาหารกลางวันเมนูพื้นบ้านคาร์บอนต่ำ', descTh: 'อิ่มอร่อยก่อนเดินทางกลับ 14:00 น.' }
+    ],
+    hostNameTh: 'กลุ่มวิสาหกิจชุมชนท่องเที่ยว Amazon ดอนหาร',
+    hostRoleTh: 'ประธานวิสาหกิจชุมชนท่องเที่ยวดอนหาร',
+    hostAvatar: '/localconnect/donhan-3.jpg',
+    breakdownLevel1: {
+      communitySharePct: 80,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 16
+    },
+    distributionLevel2: {
+      homestayPct: 0,
+      guideLeaderPct: 29,
+      localMealsPct: 45,
+      localTransportPct: 15,
+      communityFundPct: 11,
+      handicraftPct: 0,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 4,
+      treesPlanted: 20,
+      localIncomeGeneratedThb: 672,
+      culturalPreservationItems: ['กองทุนอนุรักษ์ป่าโกงกาง Amazon ดอนหาร', 'ส่งเสริมเส้นทางท่องเที่ยวคาร์บอนต่ำ']
+    },
+    isFeatured: true,
+    isB2BRecommended: false
+  },
+  {
+    id: 'bang-bai-mai-classroom',
+    titleTh: 'ห้องเรียนธรรมชาติและชุมชน @ บางใบไม้',
+    titleEn: 'Bang Bai Mai: Nature & Community Classroom by the Canal',
+    subtitleTh: 'เปิดห้องเรียนให้กว้าง เรียนรู้ธรรมชาติ สัมผัสวิถีบางใบไม้',
+    communityNameTh: 'ห้องเรียนธรรมชาติและชุมชน @ บางใบไม้',
+    communityNameEn: 'Bang Bai Mai Nature & Community Classroom',
+    communityId: 'bang-bai-mai',
+    locationTh: 'ต.บางใบไม้ อ.เมือง จ.สุราษฎร์ธานี',
+    locationEn: 'Mueang, Surat Thani',
+    region: 'south',
+    category: 'nature',
+    priceThbPerPerson: 390,
+    durationText: '5 ชั่วโมง (09:00 - 14:00 น.)',
+    maxGroupSize: 90,
+    rating: 4.8,
+    reviewCount: 11,
+    coverImage: '/localconnect/bangbaimai-13.jpg',
+    images: [
+      '/localconnect/bangbaimai-1.jpg',
+      '/localconnect/bangbaimai-2.jpg',
+      '/localconnect/bangbaimai-3.jpg',
+      '/localconnect/bangbaimai-4.jpg',
+      '/localconnect/bangbaimai-5.jpg',
+      '/localconnect/bangbaimai-6.jpg',
+      '/localconnect/bangbaimai-7.jpg',
+      '/localconnect/bangbaimai-8.jpg',
+      '/localconnect/bangbaimai-9.jpg',
+      '/localconnect/bangbaimai-10.jpg',
+      '/localconnect/bangbaimai-11.jpg',
+      '/localconnect/bangbaimai-12.jpg',
+      '/localconnect/bangbaimai-13.jpg',
+      '/localconnect/bangbaimai-14.jpg',
+      '/localconnect/bangbaimai-15.jpg',
+      '/localconnect/bangbaimai-16.jpg',
+      '/localconnect/bangbaimai-17.jpg',
+      '/localconnect/bangbaimai-18.jpg'
+    ],
+    descriptionTh: 'ชวนเด็ก ๆ ออกมาเรียนรู้จากห้องเรียนที่ไม่มีผนัง ผ่านการสัมผัสธรรมชาติและวิถีชีวิตของชุมชนริมคลองบางใบไม้ เรียนรู้เรื่องราวของสายน้ำ ผู้คน และภูมิปัญญาท้องถิ่นผ่านกิจกรรมที่สนุกและลงมือทำจริง พร้อมอิ่มอร่อยกับอาหารพื้นบ้านรสชาติคุ้นเคยที่เหมาะสำหรับเด็ก ๆ เดินทางสะดวกใกล้ตัวเมือง และเรียนรู้แนวคิดการท่องเที่ยวที่ใส่ใจสิ่งแวดล้อม เพื่อให้ทุกการเรียนรู้กลายเป็นทั้งความสนุก ความเข้าใจ และความทรงจำจากชุมชน',
+    highlightsTh: [
+      'เรียนรู้วิถีริมคลอง — เปิดประสบการณ์นอกห้องเรียน ผ่านกิจกรรมเรียนรู้ธรรมชาติ สายน้ำ และวิถีชุมชน',
+      'สนุก เรียนรู้ ลงมือทำ — กิจกรรมออกแบบสำหรับเยาวชน ให้เรียนรู้ผ่านการเล่นและประสบการณ์จริง',
+      'อิ่มอร่อยแบบท้องถิ่น — ลิ้มรสอาหารพื้นบ้านที่เรียบง่าย ทานง่าย และเหมาะกับเด็ก ๆ',
+      'เที่ยวอย่างใส่ใจสิ่งแวดล้อม — เรียนรู้แนวคิดและวิถีการจัดการชุมชนที่เป็นมิตรต่อธรรมชาติ',
+      'ใกล้เมือง เดินทางง่าย — สัมผัสเสน่ห์ชุมชนริมคลองได้สะดวก เหมาะสำหรับกิจกรรมเรียนรู้แบบไปเช้า–เย็นกลับ'
+    ],
+    includedTh: [
+      'กิจกรรมฐานการเรียนรู้ 6 ฐานกิจกรรม',
+      'อาหารว่างและอาหารกลางวัน'
+    ],
+    itinerary: [
+      { time: '09:00', titleTh: 'เปิดห้องเรียนธรรมชาติ', descTh: 'เริ่มกิจกรรมฐานการเรียนรู้ธรรมชาติและวิถีชุมชนริมคลอง' },
+      { time: '10:30', titleTh: 'ฐานกิจกรรมการเรียนรู้ 6 ฐาน', descTh: 'เรียนรู้ผ่านการเล่นและลงมือทำจริงร่วมกับพี่เลี้ยงชุมชน' },
+      { time: '12:00', titleTh: 'อาหารกลางวันพื้นบ้าน', descTh: 'ลิ้มรสอาหารพื้นบ้านเรียบง่ายเหมาะกับเด็ก ๆ' },
+      { time: '13:00', titleTh: 'สรุปกิจกรรมและเดินทางกลับ', descTh: 'ทบทวนสิ่งที่ได้เรียนรู้ก่อนเดินทางกลับ 14:00 น.' }
+    ],
+    hostNameTh: 'กลุ่มห้องเรียนธรรมชาติและชุมชนบางใบไม้',
+    hostRoleTh: 'ประธานห้องเรียนธรรมชาติและชุมชน @ บางใบไม้',
+    hostAvatar: '/localconnect/bangbaimai-3.jpg',
+    breakdownLevel1: {
+      communitySharePct: 80,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 16
+    },
+    distributionLevel2: {
+      homestayPct: 0,
+      guideLeaderPct: 48,
+      localMealsPct: 22,
+      localTransportPct: 0,
+      communityFundPct: 14,
+      handicraftPct: 16,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 8,
+      treesPlanted: 0,
+      localIncomeGeneratedThb: 312,
+      culturalPreservationItems: ['กองทุนห้องเรียนธรรมชาติบางใบไม้', 'ส่งเสริมการท่องเที่ยวใส่ใจสิ่งแวดล้อม']
+    },
+    isFeatured: true,
+    isB2BRecommended: true
+  },
+  {
+    id: 'suan-lung-um-retreat',
+    titleTh: '"อยู่แต่สวน" ที่สวนลุงอุ่ม บ้านตาขุน',
+    titleEn: 'Suan Lung Um Retreat: Slow Living Among the Orchards',
+    subtitleTh: 'พักกายกลางสวน สัมผัสวิถี เรียนรู้ความสุขที่เรียบง่าย',
+    communityNameTh: 'พิมพ์รดารีสอร์ท สวนลุงอุ่ม',
+    communityNameEn: 'Pimrada Resort at Suan Lung Um',
+    communityId: 'suan-lung-um',
+    locationTh: 'บ้านตาขุน จ.สุราษฎร์ธานี',
+    locationEn: 'Ban Ta Khun, Surat Thani',
+    region: 'south',
+    category: 'nature',
+    priceThbPerPerson: 1500,
+    durationText: '2 วัน 1 คืน',
+    maxGroupSize: 2,
+    rating: 4.9,
+    reviewCount: 4,
+    coverImage: '/localconnect/suan-lung-um-1.jpg',
+    images: [
+      '/localconnect/suan-lung-um-1.jpg',
+      '/localconnect/organic-garden-flower.jpg',
+      '/localconnect/garland-making-2.jpg',
+      '/localconnect/memorial-monument.jpg',
+      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80'
+    ],
+    descriptionTh: 'ชวนคุณหลีกหนีความเร่งรีบ แล้วใช้เวลาสองวันหนึ่งคืนอย่างเรียบง่าย ณ พิมพ์รดารีสอร์ท ที่พักสไตล์โมเดิร์นท่ามกลางบรรยากาศร่มรื่นของสวนสมรม "สวนลุงอุ่ม" สัมผัสวิถีชีวิตผ่านการเก็บวัตถุดิบสดจากสวนมาปรุงอาหารเย็นด้วยตัวเอง พร้อมเรียนรู้เสน่ห์ของอาหารเช้าแบบเรียบง่ายในแบบคนท้องถิ่น เติมความละมุนด้วยกิจกรรมทำดอกไม้จากพืชพรรณในสวน แวะสักการะพระเพื่อความเป็นสิริมงคล ณ วัดไกรสรเขตราราม ก่อนออกเดินขึ้นเขาชิงชัน ชมวิวชุมชนโดยรอบเขื่อนรัชชประภาจากมุมสูง เป็นการพักผ่อนที่ได้ทั้ง อยู่กับธรรมชาติ อยู่กับชุมชน และกลับมาอยู่กับตัวเอง',
+    highlightsTh: [
+      'พักกลางสวนสมรม — ใช้ชีวิตช้า ๆ ท่ามกลางความร่มรื่นของสวนลุงอุ่ม',
+      'เก็บจากสวน ปรุงจากใจ — เก็บวัตถุดิบสดจากสวนมารังสรรค์อาหารเย็นด้วยตัวเอง',
+      'ร้อยเรียงความงามจากธรรมชาติ — สร้างสรรค์ดอกไม้จากพืชพรรณในสวนด้วยมือของคุณ',
+      'มองชุมชนจากบนเขา — เดินขึ้นเขาชิงชัน ชมวิถีชุมชนรอบเขื่อนรัชชประภาจากมุมสูง',
+      'เที่ยวไปกับยุวมัคคุเทศก์ — เปิดมุมมองใหม่ผ่านเรื่องราวของชุมชน โดยเยาวชนในพื้นที่ร่วมทำหน้าที่นำชม พร้อมเรียนรู้และฝึกทักษะอาชีพจากประสบการณ์จริง'
+    ],
+    includedTh: [
+      'ที่พัก 1 ห้องสำหรับ 2 ท่าน รวมอาหารเช้าเมนูท้องถิ่น',
+      'Cooking class',
+      'กิจกรรมประดิษฐ์ช่อดอกไม้สำหรับการไหว้พระ',
+      'ยุวมัคคุเทศก์'
+    ],
+    itinerary: [
+      { time: 'วันที่ 1 · 14:00', titleTh: 'เช็คอินพิมพ์รดารีสอร์ท', descTh: 'เข้าพักท่ามกลางบรรยากาศร่มรื่นของสวนสมรม' },
+      { time: 'วันที่ 1 · 16:00', titleTh: 'Cooking class อาหารมื้อเย็น', descTh: 'เก็บวัตถุดิบสดจากสวนมารังสรรค์อาหารเย็นด้วยตัวเอง' },
+      { time: 'วันที่ 2 · 09:15', titleTh: 'ประดิษฐ์ช่อดอกไม้ไหว้พระ', descTh: 'สร้างสรรค์ดอกไม้จากพืชพรรณในสวนด้วยมือของคุณ' },
+      { time: 'วันที่ 2 · 10:30', titleTh: 'ไหว้พระวัดไกรสรเขตราราม และชมวิวเขาชิงชัน', descTh: 'เดินขึ้นเขาชิงชัน ชมวิถีชุมชนรอบเขื่อนรัชชประภาจากมุมสูง ก่อนเช็คเอาท์ 12:00 น.' }
+    ],
+    hostNameTh: 'ลุงอุ่ม เจ้าของสวนสมรม',
+    hostRoleTh: 'ประธานพิมพ์รดารีสอร์ท สวนลุงอุ่ม',
+    hostAvatar: '/localconnect/suan-lung-um-1.jpg',
+    breakdownLevel1: {
+      communitySharePct: 87,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 9
+    },
+    distributionLevel2: {
+      homestayPct: 50,
+      guideLeaderPct: 31,
+      localMealsPct: 15,
+      localTransportPct: 0,
+      communityFundPct: 4,
+      handicraftPct: 0,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 5,
+      treesPlanted: 0,
+      localIncomeGeneratedThb: 1300,
+      culturalPreservationItems: ['กองทุนยุวมัคคุเทศก์สวนลุงอุ่ม', 'สืบสานวิถีสวนสมรมบ้านตาขุน']
+    },
+    isFeatured: true,
+    isB2BRecommended: false
+  },
+  {
+    id: 'koh-set-csr',
+    titleTh: 'หาหอย ปล่อยปู ดูแลป่าโกงกาง @ เกาะเสร็จ ไชยา',
+    titleEn: 'Koh Set: Shell Hunting, Crab Release & Mangrove Care',
+    subtitleTh: 'สนุกกับทะเล ดูแลธรรมชาติ ส่งต่อคุณค่าให้ชุมชน',
+    communityNameTh: 'กลุ่มท่องเที่ยวเชิงอนุรักษ์บ้านพุมเรียง',
+    communityNameEn: 'Ban Phum Riang Eco-Tourism Group',
+    communityId: 'koh-set',
+    locationTh: 'เกาะเสร็จ ต.พุมเรียง อ.ไชยา จ.สุราษฎร์ธานี',
+    locationEn: 'Chaiya, Surat Thani',
+    region: 'south',
+    category: 'culture',
+    priceThbPerPerson: 1100,
+    durationText: '5 ชั่วโมง (07:00 - 12:00 น.)',
+    maxGroupSize: 40,
+    rating: 4.85,
+    reviewCount: 6,
+    coverImage: '/localconnect/kohset-2.jpg',
+    images: [
+      '/localconnect/kohset-2.jpg',
+      '/localconnect/kohset-1.jpg',
+      '/localconnect/kohset-4.jpg',
+      '/localconnect/kohset-3.jpg',
+      '/localconnect/kohset-5.jpg'
+    ],
+    descriptionTh: 'ออกไปสัมผัสเสน่ห์ทะเลอ่าวบ้านดอนที่เกาะเสร็จ อำเภอไชยา เกาะเล็ก ๆ ใกล้ฝั่งที่ยังคงความงดงามและความเป็นธรรมชาติ ชวนคุณสนุกกับการออกหาหอยนานาชนิด เรียนรู้ระบบนิเวศชายฝั่งผ่านกิจกรรมปล่อยปูและดูแลป่าโกงกาง พร้อมใช้เวลาพักผ่อน เล่นน้ำ และดื่มด่ำกับบรรยากาศหาดทรายสวย ๆ ที่ให้ความรู้สึกเป็นส่วนตัว เป็นวันพักผ่อนที่ได้ทั้งความสนุกจากทะเลและความสุขจากการมีส่วนร่วมดูแลธรรมชาติ',
+    highlightsTh: [
+      'เที่ยวทะเล พร้อมดูแลทะเล — ร่วมกิจกรรม CSR ปล่อยปูและดูแลป่าโกงกาง เติมคุณค่าให้ระบบนิเวศชายฝั่ง',
+      'สนุกกับการหาหอย — เรียนรู้และลงมือค้นหาหอยนานาชนิดท่ามกลางธรรมชาติของอ่าวบ้านดอน',
+      'หาดสวย เกาะใกล้ฝั่ง — สัมผัสธรรมชาติทางทะเลที่สวยงาม เดินทางไม่ไกล เหมาะกับการพักผ่อนแบบสบาย ๆ',
+      'เล่นน้ำแบบเป็นส่วนตัว — ใช้เวลาชิล ๆ ริมทะเล เล่นน้ำ และผ่อนคลายบนเกาะที่ให้บรรยากาศเป็นส่วนตัว',
+      'เที่ยวสนุก ส่งต่อคุณค่า — เปลี่ยนวันพักผ่อนให้เป็นประสบการณ์ที่ดีต่อทั้งตัวคุณและธรรมชาติ'
+    ],
+    includedTh: [
+      'กิจกรรม CSR',
+      'เรือหางยาว',
+      'อาหารกลางวันเมนูอาหารทะเลและอาหารว่าง',
+      'มัคคุเทศก์ท้องถิ่น'
+    ],
+    itinerary: [
+      { time: '07:00', titleTh: 'ออกเรือสู่เกาะเสร็จ', descTh: 'ล่องเรือหางยาวสู่เกาะเล็กใกล้ฝั่งในอ่าวบ้านดอน' },
+      { time: '08:00', titleTh: 'กิจกรรม CSR ปล่อยปูและดูแลป่าโกงกาง', descTh: 'ร่วมดูแลระบบนิเวศชายฝั่งเพื่อความยั่งยืน' },
+      { time: '09:30', titleTh: 'สนุกกับการหาหอย', descTh: 'เรียนรู้และลงมือค้นหาหอยนานาชนิด' },
+      { time: '11:00', titleTh: 'พักผ่อนเล่นน้ำและอาหารกลางวันทะเล', descTh: 'อิ่มอร่อยกับอาหารทะเลก่อนเดินทางกลับ 12:00 น.' }
+    ],
+    hostNameTh: 'คุณจรินทร์ เฉยเชยชม',
+    hostRoleTh: 'ประธานกลุ่มท่องเที่ยวเชิงอนุรักษ์บ้านพุมเรียง โทร. 092-379-3969',
+    hostAvatar: '/localconnect/kohset-2.jpg',
+    breakdownLevel1: {
+      communitySharePct: 80,
+      paymentGatewayPct: 2,
+      communityManagerPct: 2,
+      insuranceSupportPct: 0,
+      platformDevOpsPct: 16
+    },
+    distributionLevel2: {
+      homestayPct: 0,
+      guideLeaderPct: 28,
+      localMealsPct: 35,
+      localTransportPct: 17,
+      communityFundPct: 20,
+      handicraftPct: 0,
+      insurancePct: 0
+    },
+    impact: {
+      jobsSupported: 10,
+      treesPlanted: 40,
+      localIncomeGeneratedThb: 880,
+      culturalPreservationItems: ['บ้านปลาธนาคารปู', 'กองทุน CSR ปล่อยพันธุ์สัตว์น้ำอ่าวบ้านดอน', 'อนุรักษ์ป่าโกงกางเกาะเสร็จ']
     },
     isFeatured: true,
     isB2BRecommended: true
@@ -986,41 +1134,43 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
 
 export const SAMPLE_B2B_PACKAGES: B2BPackage[] = [
   {
-    id: 'b2b-csr-leeled',
-    titleTh: 'CSR & Team Building: ปลูกป่าชายเลนอเมซอน & สร้างบ้านปลา ชุมชนลีเล็ด',
+    id: 'b2b-csr-koh-raet',
+    titleTh: 'CSR & Team Building: เอนกายโฮมสเตย์ เฮฮาที่เกาะแรต',
     type: 'CSR',
-    targetPax: '20 - 100 ท่าน',
-    duration: '2 วัน 1 คืน / 1 วัน',
-    priceStartThb: 2800,
-    esgAlignment: ['SDG 1: Zero Poverty', 'SDG 13: Climate Action', 'SDG 14: Life Below Water'],
-    descriptionTh: 'โปรแกรมองค์กรที่ผสานการล่องเรือชมอเมซอนสุราษฎร์ ปลูกป่าโกงกาง สร้างบ้านปลา และกิจกรรม Team Building สร้างความสามัคคีพร้อมใบรับรองผลกระทบ ESG',
-    featuredCommunityTh: 'กลุ่มท่องเที่ยวโดยชุมชนลีเล็ด จ.สุราษฎร์ธานี',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+    targetPax: '20 - 40 ท่าน',
+    duration: '2 วัน 1 คืน',
+    priceStartThb: 2300,
+    esgAlignment: ['SDG 1: Zero Poverty', 'SDG 8: Decent Work', 'SDG 14: Life Below Water'],
+    descriptionTh: 'โปรแกรมองค์กรที่ผสานห้องประชุมและกิจกรรมพัฒนาทีมเข้ากับโฮมสเตย์ชุมชนเกาะแรต สัมผัสวิถีชาวประมง อาหารทะเลสดใหม่ และกิจกรรมชมโลมาสีชมพูในอ่าวบ้านดอน เหมาะกับกลุ่มเล็กที่ต้องการบรรยากาศผ่อนคลายและงบประมาณเข้าถึงง่าย',
+    featuredCommunityTh: 'วิสาหกิจชุมชนโฮมสเตย์เกาะแรต จ.สุราษฎร์ธานี',
+    image: '/localconnect/koh-raet-1.jpg',
+    experienceId: 'koh-raet-homestay'
   },
   {
-    id: 'b2b-field-trip-khao-thep',
-    titleTh: 'Field Trip นิสิตนักศึกษา & องค์กร: นวัตกรรมท่องเที่ยวอนุรักษ์ & เขาสกโมเดล',
-    type: 'University Field Trip',
-    targetPax: '30 - 150 ท่าน',
-    duration: '2 วัน 1 คืน',
-    priceStartThb: 2900,
-    esgAlignment: ['SDG 4: Quality Education', 'SDG 8: Decent Work', 'SDG 15: Life on Land'],
-    descriptionTh: 'ทริปการศึกษาดูงานนวัตกรรมท่องเที่ยวอนุรักษ์ จุดชมวิวสะพานแขวนเขาเทพพิทักษ์ วิวเขารูปหัวใจ การบริหารจัดการเกษตรอินทรีย์และการกระจายรายได้สวัสดิการชุมชน',
-    featuredCommunityTh: 'วิสาหกิจชุมชนท่องเที่ยวเชิงอนุรักษ์บ้านเขาเทพพิทักษ์ จ.สุราษฎร์ธานี',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+    id: 'b2b-csr-koh-set',
+    titleTh: 'CSR & Team Building: หาหอย ปล่อยปู ดูแลป่าโกงกาง เกาะเสร็จ ไชยา',
+    type: 'CSR',
+    targetPax: '20 - 40 ท่าน',
+    duration: '5 ชั่วโมง (Half Day)',
+    priceStartThb: 1100,
+    esgAlignment: ['SDG 8: Decent Work', 'SDG 14: Life Below Water', 'SDG 15: Life on Land'],
+    descriptionTh: 'โปรแกรม CSR ครึ่งวันสำหรับองค์กร ร่วมกิจกรรมปล่อยปูและดูแลป่าโกงกางเพื่อฟื้นฟูระบบนิเวศชายฝั่ง พร้อมกิจกรรมหาหอยและพักผ่อนบนหาดทรายส่วนตัวของเกาะเสร็จ อำเภอไชยา เหมาะกับกิจกรรมสร้างความสัมพันธ์ทีมที่ได้ทั้งความสนุกและคุณค่าต่อสิ่งแวดล้อม',
+    featuredCommunityTh: 'กลุ่มท่องเที่ยวเชิงอนุรักษ์บ้านพุมเรียง ต.พุมเรียง อ.ไชยา จ.สุราษฎร์ธานี',
+    image: '/localconnect/kohset-1.jpg',
+    experienceId: 'koh-set-csr'
   }
 ];
 
 export const INITIAL_BOOKINGS: Booking[] = [
   {
     id: 'BK-2026-8801',
-    experienceId: 'klong-noi-canal-tour',
-    experienceTitleTh: 'ล่องเรือสวนผลไม้ ป่าจากริมคลอง หัตถกรรมกะลามะพร้าว และศูนย์ฝึกลิงเพื่อการเกษตร',
-    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวตำบลคลองน้อย',
+    experienceId: 'khao-thep-phithak-suspension',
+    experienceTitleTh: 'เขาเทพพิทักษ์: การเดินทางด้วยหัวใจ',
+    communityNameTh: 'วิสาหกิจชุมชนท่องเที่ยวเชิงอนุรักษ์บ้านเขาเทพพิทักษ์',
     bookingDate: '2026-08-20',
     paxCount: 2,
-    totalPriceThb: 2500,
-    directToCommunityThb: 1925,
+    totalPriceThb: 2200,
+    directToCommunityThb: 1804,
     status: 'confirmed',
     travelerName: 'คุณภัทรวรินทร์ สมบูรณ์',
     travelerEmail: 'patwarin@gmail.com',

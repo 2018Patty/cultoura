@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { SAMPLE_B2B_PACKAGES } from '../data/sampleData';
-import { PageId } from '../types';
+import { SAMPLE_B2B_PACKAGES, SAMPLE_EXPERIENCES } from '../data/sampleData';
+import { PageId, Experience } from '../types';
 import { Building2, Award, FileText, CheckCircle2, Users, Send, Sparkles, ChevronRight, ShieldCheck } from 'lucide-react';
 
 interface B2BPageProps {
   onNavigate: (page: PageId) => void;
+  onSelectExperience: (exp: Experience) => void;
 }
 
-export const B2BPage: React.FC<B2BPageProps> = ({ onNavigate }) => {
+export const B2BPage: React.FC<B2BPageProps> = ({ onNavigate, onSelectExperience }) => {
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
   const [companyName, setCompanyName] = useState<string>('');
@@ -98,7 +99,12 @@ export const B2BPage: React.FC<B2BPageProps> = ({ onNavigate }) => {
         <h2 className="text-2xl font-black text-[#1F4B38]">ตัวอย่างแพ็กเกจยอดนิยมสำหรับองค์กร</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {SAMPLE_B2B_PACKAGES.map((pkg) => (
+          {SAMPLE_B2B_PACKAGES.map((pkg) => {
+            const linkedExperience = pkg.experienceId
+              ? SAMPLE_EXPERIENCES.find((exp) => exp.id === pkg.experienceId)
+              : undefined;
+
+            return (
             <div key={pkg.id} className="bg-[#FFFFFF] rounded-3xl border-2 border-[#E6F2EA] overflow-hidden shadow-md flex flex-col justify-between">
               <div>
                 <img src={pkg.image} alt={pkg.titleTh} className="w-full h-48 object-cover" />
@@ -110,7 +116,19 @@ export const B2BPage: React.FC<B2BPageProps> = ({ onNavigate }) => {
                     <span className="text-xs font-bold text-[#1F4B38]">{pkg.duration}</span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-[#1F4B38]">{pkg.titleTh}</h3>
+                  {linkedExperience ? (
+                    <h3
+                      onClick={() => {
+                        onSelectExperience(linkedExperience);
+                        onNavigate('detail');
+                      }}
+                      className="text-lg font-bold text-[#1F4B38] hover:text-[#355E3B] hover:underline cursor-pointer transition-colors"
+                    >
+                      {pkg.titleTh}
+                    </h3>
+                  ) : (
+                    <h3 className="text-lg font-bold text-[#1F4B38]">{pkg.titleTh}</h3>
+                  )}
                   <p className="text-xs text-[#1F4B38]/80 leading-relaxed">{pkg.descriptionTh}</p>
 
                   <div className="pt-2 flex flex-wrap gap-1.5">
@@ -137,7 +155,8 @@ export const B2BPage: React.FC<B2BPageProps> = ({ onNavigate }) => {
                 </button>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

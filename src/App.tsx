@@ -94,8 +94,9 @@ export default function App() {
         )}
 
         {currentPage === 'b2b' && (
-          <B2BPage 
-            onNavigate={handleNavigate} 
+          <B2BPage
+            onNavigate={handleNavigate}
+            onSelectExperience={handleSelectExperience}
           />
         )}
 

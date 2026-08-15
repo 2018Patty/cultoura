@@ -52,9 +52,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectExperien
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1F4B38] leading-[1.15] tracking-tight">
-                เชื่อมโยงวิถีชีวิต <br className="hidden sm:block" />
-                <span className="text-[#355E3B]">กระจายรายได้ตรงถึงชุมชน</span>
+                เปิดประสบการณ์ สัมผัสวิถี<br className="hidden sm:block" />
+                <span className="text-[#355E3B]">ส่งต่อคุณค่าให้ชุมชน </span>
               </h1>
+
+              <p className="text-sm sm:text-base text-[#6C8355] font-bold uppercase tracking-widest">
+                Travel, Connect, Give Back
+              </p>
 
               <p className="text-base sm:text-lg text-[#1F4B38]/85 font-medium leading-relaxed max-w-2xl">
                 สัมผัสคุณค่าวัฒนธรรม อาหาร และธรรมชาติผ่านประสบการณ์ชุมชนแท้ (CBT) พร้อมระบบตรวจสอบเส้นทางเงินรายได้ ชุมชนได้รับประโยชน์เต็ม 100%
@@ -105,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectExperien
                 {/* Popular Keywords */}
                 <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-[#1F4B38]/70">
                   <span className="font-bold text-[#1F4B38]">ยอดนิยม:</span>
-                  {['ชาดอยปู่หมื่น', 'มัดย้อมคีรีวง', 'มรดกโลกบ้านเชียง', 'โฮมสเตย์', 'CSR องค์กร'].map((kw, i) => (
+                  {['เขาเทพพิทักษ์', 'เชี่ยวหลาน', 'ไข่เค็ม', 'โฮมสเตย์เกาะแรต', 'ประสิทธิ์ปัญญา', 'ป่าโกงกาง'].map((kw, i) => (
                     <button 
                       key={i}
                       onClick={() => onNavigate('explore')}
@@ -138,9 +142,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectExperien
             {/* Right Hero Image Card */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-white">
-                <img 
-                  src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1000&q=80" 
-                  alt="Doi Pu Muen Lahu Culture" 
+                <img
+                  src={SAMPLE_EXPERIENCES[0].coverImage}
+                  alt={SAMPLE_EXPERIENCES[0].titleEn}
                   className="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#14301F]/90 via-[#14301F]/30 to-transparent flex flex-col justify-end p-6 text-white text-left">
@@ -149,23 +153,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectExperien
                       ทริปแนะนำสัปดาห์นี้
                     </span>
                     <span className="bg-black/40 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
-                      <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> 4.95
+                      <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> {SAMPLE_EXPERIENCES[0].rating}
                     </span>
                   </div>
                   <h3 className="text-xl font-bold leading-snug">
-                    เรียนรู้วิถีชาออร์แกนิกและชนเผ่าลาหู่ ดอยปู่หมื่น
+                    {SAMPLE_EXPERIENCES[0].titleTh}
                   </h3>
                   <p className="text-xs text-[#E6F2EA] mt-1">
-                    จิบบอกชาพระราชทาน และสัมผัสวิถีชีวิตคนอยู่กับป่า
+                    {SAMPLE_EXPERIENCES[0].subtitleTh}
                   </p>
-                  
+
                   {/* Revenue Teaser Badge */}
                   <div className="mt-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 flex items-center justify-between">
                     <div>
                       <span className="text-[10px] text-[#E6F2EA] block font-semibold">รายได้ตรงสู่ชุมชน</span>
-                      <span className="text-sm font-extrabold text-[#B8D1C1]">2,000 THB (77%)</span>
+                      <span className="text-sm font-extrabold text-[#B8D1C1]">{SAMPLE_EXPERIENCES[0].impact.localIncomeGeneratedThb.toLocaleString()} THB ({SAMPLE_EXPERIENCES[0].breakdownLevel1.communitySharePct}%)</span>
                     </div>
-                    <button 
+                    <button
                       onClick={() => {
                         onSelectExperience(SAMPLE_EXPERIENCES[0]);
                         onNavigate('detail');
@@ -184,8 +188,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectExperien
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div className="text-left">
-                  <p className="text-xs font-black text-[#1F4B38]">Verified CBT Standard</p>
-                  <p className="text-[10px] font-semibold text-[#6C8355]">ได้รับการรับรองมาตรฐานชุมชน</p>
+                  <p className="text-xs font-black text-[#1F4B38]">กิจกรรมแนะนำ</p>
+                  <p className="text-[10px] font-semibold text-[#6C8355]">Top vote</p>
                 </div>
               </div>
             </div>
