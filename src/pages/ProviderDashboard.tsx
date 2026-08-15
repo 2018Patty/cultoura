@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageId } from '../types';
+import { SAMPLE_COMMUNITIES } from '../data/sampleData';
 import { HeartHandshake, TrendingUp, Calendar, Users, DollarSign, ArrowUpRight, ShieldCheck } from 'lucide-react';
 
 interface ProviderDashboardProps {
@@ -7,6 +8,7 @@ interface ProviderDashboardProps {
 }
 
 export const ProviderDashboard: React.FC<ProviderDashboardProps> = ({ onNavigate }) => {
+  const community = SAMPLE_COMMUNITIES[0];
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 text-left">
       
@@ -21,7 +23,7 @@ export const ProviderDashboard: React.FC<ProviderDashboardProps> = ({ onNavigate
               <span className="text-[10px] font-bold text-[#B8D1C1] uppercase tracking-wider block">
                 ระบบจัดการวิสาหกิจท่องเที่ยวชุมชน (Community Operator Portal)
               </span>
-              <h1 className="text-2xl font-black text-white">วิสาหกิจท่องเที่ยวชุมชนบ้านดอยปู่หมื่น</h1>
+              <h1 className="text-2xl font-black text-white">{community.nameTh}</h1>
             </div>
           </div>
 

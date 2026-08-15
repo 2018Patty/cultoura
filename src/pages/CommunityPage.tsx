@@ -21,7 +21,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({ onNavigate, onSele
       <div className="space-y-3">
         <div className="flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-[#355E3B]" />
-          <h2 className="text-xl sm:text-2xl font-black text-[#1F4B38]">เลือกชุมชนท่องเที่ยวต้นแบบในประเทศไทย</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-[#1F4B38]">เลือกชุมชนท่องเที่ยวเด่นในประเทศไทย</h2>
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {SAMPLE_COMMUNITIES.map((c) => {
