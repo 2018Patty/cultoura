@@ -392,7 +392,9 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/wat-khao-phang-temple.jpg',
       '/localconnect/suspension-bridge-motorbike.jpg',
       '/localconnect/elder-luk-wue-craft.jpg',
-      '/localconnect/local-food-dishes.jpg'
+      '/localconnect/local-food-dishes.jpg',
+      '/localconnect/local-cooking-mortar.jpg',
+      '/localconnect/thai-food-plate.jpg'
     ],
     descriptionTh: 'สัมผัสเรื่องราวและวิถีชีวิตของชุมชนคลองแสง เริ่มต้นด้วยการเรียนรู้ความศรัทธาของชาวชุมชนเขาพัง ณ วัดเขาพัง ข้ามสะพานแขวนภูเขารูปหัวใจ เชื่อมโยงกับธรรมชาติท่ามกลางอ้อมกอดของขุนเขา เรียนรู้วิถีสวนยางและสวนผลไม้ พร้อมลิ้มรสทุเรียนคลองแสงร้อยปี เปิดประสบการณ์ทำอาหารพื้นถิ่นเพื่อสุขภาพ และสนุกกับ "ลูกหวือ" ของเล่นพื้นบ้านที่ถ่ายทอดจากผู้สูงอายุ สะท้อนภูมิปัญญาและคุณค่าที่ชุมชนตั้งใจรักษาและส่งต่อจากรุ่นสู่รุ่น',
     highlightsTh: [
@@ -620,7 +622,15 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/koh-raet-4.jpg',
       '/localconnect/koh-raet-5.jpg',
       '/localconnect/koh-raet-6.jpg',
-      '/localconnect/koh-raet-7.jpg'
+      '/localconnect/koh-raet-7.jpg',
+      '/localconnect/thatong-1.jpg',
+      '/localconnect/thatong-2.jpg',
+      '/localconnect/thatong-3.jpg',
+      '/localconnect/thatong-4.jpg',
+      '/localconnect/thatong-5.jpg',
+      '/localconnect/thatong-6.jpg',
+      '/localconnect/thatong-7.jpg',
+      '/localconnect/thatong-8.jpg'
     ],
     descriptionTh: 'ชวนวางความเร่งรีบ แล้วเอนกายพักใจในบรรยากาศเรียบง่ายของเกาะแรต สัมผัสวิถีชีวิตชาวประมงอย่างใกล้ชิด พักในโฮมสเตย์สะอาดและอบอุ่น พร้อมต้อนรับด้วยอาหารทะเลสดใหม่จากท้องถิ่น เติมสีสันด้วยกิจกรรมชมโลมาสีชมพู และใช้เวลาร่วมกันอย่างเป็นกันเอง เหมาะสำหรับกลุ่มเล็ก ครอบครัว เพื่อน หรือองค์กรที่ต้องการจัดประชุมและกิจกรรมพัฒนาทีมในบรรยากาศผ่อนคลาย คุ้มค่า และเข้าถึงง่าย พร้อมเชื่อมต่อการเดินทางสู่เกาะสมุยได้อย่างสะดวก',
     highlightsTh: [
