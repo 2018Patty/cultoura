@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 โปร่งใส ตรวจสอบได้ ชุมชนได้รับประโยชน์เต็ม 100%
               </h3>
               <p className="text-sm text-[#E6F2EA] max-w-2xl leading-relaxed">
-                 LocalConnect มุ่งมั่นกระจายรายได้ถึงมือชาวบ้าน ท้องถิ่น และกองทุนพัฒนาชุมชนอย่างโปร่งใส ไร้ค่าธรรมเนียมแอบแฝง
+                 LocalConnect มุ่งมั่นกระจายรายได้ถึงมือชาวบ้าน ท้องถิ่น และกองทุนพัฒนาชุมชนอย่างโปร่งใส
               </p>
             </div>
           </div>
