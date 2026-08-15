@@ -193,7 +193,9 @@ export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
       '/localconnect/prasitpanya-3.jpg',
       '/localconnect/prasitpanya-5.jpg',
       '/localconnect/prasitpanya-6.jpg',
-      '/localconnect/prasitpanya-7.jpg'
+      '/localconnect/prasitpanya-7.jpg',
+      '/localconnect/prasitpanya-8.jpg',
+      '/localconnect/prasitpanya-9.jpg'
     ],
     foundingYear: 2019,
     householdsInvolved: 25,
@@ -344,7 +346,11 @@ export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
       '/localconnect/kohset-1.jpg',
       '/localconnect/kohset-4.jpg',
       '/localconnect/kohset-3.jpg',
-      '/localconnect/kohset-5.jpg'
+      '/localconnect/kohset-5.jpg',
+      '/localconnect/kohset-6.jpg',
+      '/localconnect/kohset-7.jpg',
+      '/localconnect/kohset-8.jpg',
+      '/localconnect/kohset-9.jpg'
     ],
     foundingYear: 2018,
     householdsInvolved: 20,
@@ -782,7 +788,9 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/prasitpanya-3.jpg',
       '/localconnect/prasitpanya-5.jpg',
       '/localconnect/prasitpanya-6.jpg',
-      '/localconnect/prasitpanya-7.jpg'
+      '/localconnect/prasitpanya-7.jpg',
+      '/localconnect/prasitpanya-8.jpg',
+      '/localconnect/prasitpanya-9.jpg'
     ],
     descriptionTh: 'เปิดประสบการณ์เรียนรู้ภูมิปัญญาจาก "ต้นจาก" ผ่านกิจกรรมที่ชวนลงมือทำ ตั้งแต่การสร้างสรรค์ผ้ามัดย้อมจากสีธรรมชาติของเปลือกลูกจาก การทำขนมไทยจากใบและลูกจาก ไปจนถึงการลิ้มรสอาหารพื้นบ้านที่นำวัตถุดิบจากต้นจากมารังสรรค์เป็นเมนูท้องถิ่น พร้อมสัมผัสเรื่องราวของชุมชนที่เปลี่ยนภูมิปัญญาให้เป็นโอกาส เพราะส่วนหนึ่งของรายได้จากกิจกรรมถูกนำไปสนับสนุนการเรียนรู้และสร้างโอกาสในการหารายได้ให้แก่นักเรียนด้อยโอกาสและนักเรียนกลุ่มเปราะบาง เป็นประสบการณ์ที่ได้ทั้งความรู้ ความอร่อย และการส่งต่อโอกาสให้คนรุ่นใหม่',
     highlightsTh: [
@@ -1089,7 +1097,11 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/kohset-1.jpg',
       '/localconnect/kohset-4.jpg',
       '/localconnect/kohset-3.jpg',
-      '/localconnect/kohset-5.jpg'
+      '/localconnect/kohset-5.jpg',
+      '/localconnect/kohset-6.jpg',
+      '/localconnect/kohset-7.jpg',
+      '/localconnect/kohset-8.jpg',
+      '/localconnect/kohset-9.jpg'
     ],
     descriptionTh: 'ออกไปสัมผัสเสน่ห์ทะเลอ่าวบ้านดอนที่เกาะเสร็จ อำเภอไชยา เกาะเล็ก ๆ ใกล้ฝั่งที่ยังคงความงดงามและความเป็นธรรมชาติ ชวนคุณสนุกกับการออกหาหอยนานาชนิด เรียนรู้ระบบนิเวศชายฝั่งผ่านกิจกรรมปล่อยปูและดูแลป่าโกงกาง พร้อมใช้เวลาพักผ่อน เล่นน้ำ และดื่มด่ำกับบรรยากาศหาดทรายสวย ๆ ที่ให้ความรู้สึกเป็นส่วนตัว เป็นวันพักผ่อนที่ได้ทั้งความสนุกจากทะเลและความสุขจากการมีส่วนร่วมดูแลธรรมชาติ',
     highlightsTh: [
