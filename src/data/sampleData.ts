@@ -311,8 +311,7 @@ export const SAMPLE_COMMUNITIES: CommunityProfile[] = [
       '/localconnect/suan-lung-um-1.jpg',
       '/localconnect/organic-garden-flower.jpg',
       '/localconnect/garland-making-2.jpg',
-      '/localconnect/memorial-monument.jpg',
-      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/memorial-monument.jpg'
     ],
     foundingYear: 2021,
     householdsInvolved: 10,
@@ -1006,8 +1005,7 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
       '/localconnect/suan-lung-um-1.jpg',
       '/localconnect/organic-garden-flower.jpg',
       '/localconnect/garland-making-2.jpg',
-      '/localconnect/memorial-monument.jpg',
-      'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80'
+      '/localconnect/memorial-monument.jpg'
     ],
     descriptionTh: 'ชวนคุณหลีกหนีความเร่งรีบ แล้วใช้เวลาสองวันหนึ่งคืนอย่างเรียบง่าย ณ พิมพ์รดารีสอร์ท ที่พักสไตล์โมเดิร์นท่ามกลางบรรยากาศร่มรื่นของสวนสมรม "สวนลุงอุ่ม" สัมผัสวิถีชีวิตผ่านการเก็บวัตถุดิบสดจากสวนมาปรุงอาหารเย็นด้วยตัวเอง พร้อมเรียนรู้เสน่ห์ของอาหารเช้าแบบเรียบง่ายในแบบคนท้องถิ่น เติมความละมุนด้วยกิจกรรมทำดอกไม้จากพืชพรรณในสวน แวะสักการะพระเพื่อความเป็นสิริมงคล ณ วัดไกรสรเขตราราม ก่อนออกเดินขึ้นเขาชิงชัน ชมวิวชุมชนโดยรอบเขื่อนรัชชประภาจากมุมสูง เป็นการพักผ่อนที่ได้ทั้ง อยู่กับธรรมชาติ อยู่กับชุมชน และกลับมาอยู่กับตัวเอง',
     highlightsTh: [
