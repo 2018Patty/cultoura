@@ -998,6 +998,7 @@ export const SAMPLE_EXPERIENCES: Experience[] = [
     priceThbPerPerson: 1500,
     durationText: '2 วัน 1 คืน',
     maxGroupSize: 2,
+    groupSizeLabelTh: 'จำนวนสูงสุดที่รับได้ 2 คนต่อห้อง',
     rating: 4.9,
     reviewCount: 4,
     coverImage: '/localconnect/suan-lung-um-1.jpg',

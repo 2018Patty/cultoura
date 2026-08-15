@@ -87,7 +87,7 @@ export const DetailPage: React.FC<DetailPageProps> = ({ experience, onNavigate, 
             <Clock className="w-4 h-4 text-[#355E3B]" /> ระยะเวลา: {experience.durationText}
           </span>
           <span className="flex items-center gap-1">
-            <Users className="w-4 h-4 text-[#6C8355]" /> รับกลุ่มละไม่เกิน {experience.maxGroupSize} ท่าน
+            <Users className="w-4 h-4 text-[#6C8355]" /> {experience.groupSizeLabelTh || `รับกลุ่มละไม่เกิน ${experience.maxGroupSize} ท่าน`}
           </span>
         </div>
       </div>

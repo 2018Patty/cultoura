@@ -50,6 +50,7 @@ export interface Experience {
   priceThbPerPerson: number;
   durationText: string;
   maxGroupSize: number;
+  groupSizeLabelTh?: string;
   rating: number;
   reviewCount: number;
   coverImage: string;
